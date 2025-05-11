@@ -58,18 +58,20 @@ const Header = () => {
   return (
     <header 
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-white shadow-md py-2" : "bg-white/90 backdrop-blur-sm py-4"
+        scrolled ? "bg-secondary shadow-md py-2" : "bg-secondary/90 backdrop-blur-sm py-4"
       }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 relative z-10">
-            <img 
-              src={partsoneLogoPath} 
-              alt="Partsone Logo" 
-              className="h-10"
-            />
+            <div className="bg-black p-1 rounded">
+              <img 
+                src={partsoneLogoPath} 
+                alt="Partsone Logo" 
+                className="h-10"
+              />
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -79,7 +81,7 @@ const Header = () => {
                 key={link.href}
                 href={link.href}
                 onClick={handleNavLinkClick}
-                className="font-medium hover:text-primary transition-colors duration-200"
+                className="font-medium text-white hover:text-primary transition-colors duration-200"
               >
                 {link.label}
               </a>
@@ -127,7 +129,7 @@ const Header = () => {
                     key={link.href}
                     href={link.href}
                     onClick={handleNavLinkClick}
-                    className="font-medium hover:text-primary transition-colors text-lg py-2"
+                    className="font-medium text-white hover:text-primary transition-colors text-lg py-2"
                   >
                     {link.label}
                   </a>
