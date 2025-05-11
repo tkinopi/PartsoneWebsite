@@ -1,0 +1,151 @@
+import { useState, useEffect } from "react";
+import { Link } from "wouter";
+import { useScroll } from "@/hooks/use-scroll";
+import { motion, AnimatePresence } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { 
+  Menu, 
+  X, 
+  ChevronDown 
+} from "lucide-react";
+
+const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const scrolled = useScroll(50);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = () => {
+      if (isMenuOpen) setIsMenuOpen(false);
+    };
+
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, [isMenuOpen]);
+
+  const navLinks = [
+    { href: "#about", label: "会社情報" },
+    { href: "#services", label: "サービス" },
+    { href: "#company", label: "企業文化" },
+    { href: "#contact", label: "お問い合わせ" },
+  ];
+
+  const handleNavLinkClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const href = e.currentTarget.getAttribute("href");
+    if (!href) return;
+    
+    const targetElement = document.querySelector(href);
+    if (!targetElement) return;
+    
+    const headerOffset = 80;
+    const elementPosition = targetElement.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+    
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+    
+    setIsMenuOpen(false);
+  };
+
+  return (
+    <header 
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+        scrolled ? "bg-white shadow-md py-2" : "bg-white/90 backdrop-blur-sm py-4"
+      }`}
+    >
+      <div className="container mx-auto px-4">
+        <div className="flex justify-between items-center">
+          {/* Logo */}
+          <Link href="/" className="flex items-center space-x-2 relative z-10">
+            <img 
+              src="https://www.partsone7.com/wp-content/uploads/2021/11/logo-1.png" 
+              alt="Partsone Logo" 
+              className="h-10"
+            />
+          </Link>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center space-x-8">
+            {navLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                onClick={handleNavLinkClick}
+                className="font-medium hover:text-primary transition-colors duration-200"
+              >
+                {link.label}
+              </a>
+            ))}
+            <Button 
+              asChild 
+              className="bg-primary hover:bg-primary/90 text-white"
+            >
+              <a href="#contact" onClick={handleNavLinkClick}>
+                お問い合わせ
+              </a>
+            </Button>
+          </nav>
+
+          {/* Mobile Menu Toggle */}
+          <button
+            className="md:hidden relative z-10 p-2"
+            onClick={(e) => {
+              e.stopPropagation();
+              toggleMenu();
+            }}
+            aria-label="Toggle menu"
+          >
+            {isMenuOpen ? (
+              <X className="h-6 w-6 text-primary" />
+            ) : (
+              <Menu className="h-6 w-6 text-secondary" />
+            )}
+          </button>
+        </div>
+
+        {/* Mobile Navigation Menu */}
+        <AnimatePresence>
+          {isMenuOpen && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: "auto" }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.2 }}
+              className="md:hidden overflow-hidden"
+            >
+              <nav className="flex flex-col space-y-4 pt-4 pb-6">
+                {navLinks.map((link) => (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    onClick={handleNavLinkClick}
+                    className="font-medium hover:text-primary transition-colors text-lg py-2"
+                  >
+                    {link.label}
+                  </a>
+                ))}
+                <Button 
+                  asChild 
+                  className="bg-primary hover:bg-primary/90 text-white w-full mt-2"
+                >
+                  <a href="#contact" onClick={handleNavLinkClick}>
+                    お問い合わせ
+                  </a>
+                </Button>
+              </nav>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+    </header>
+  );
+};
+
+export default Header;
