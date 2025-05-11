@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { SocialIcons } from "@/components/ui/social-icons";
+import partsoneLogoPath from "@/assets/partsone_logo.png";
 
 const Footer = () => {
   const footerLinks = {
@@ -39,7 +40,7 @@ const Footer = () => {
             <div>
               <div className="bg-white p-2 inline-block rounded mb-4">
                 <img
-                  src="https://www.partsone7.com/wp-content/uploads/2021/11/logo-1.png"
+                  src={partsoneLogoPath}
                   alt="Partsone Logo"
                   className="h-12"
                 />

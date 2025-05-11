@@ -8,6 +8,7 @@ import {
   X, 
   ChevronDown 
 } from "lucide-react";
+import partsoneLogoPath from "@/assets/partsone_logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -65,7 +66,7 @@ const Header = () => {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 relative z-10">
             <img 
-              src="https://www.partsone7.com/wp-content/uploads/2021/11/logo-1.png" 
+              src={partsoneLogoPath} 
               alt="Partsone Logo" 
               className="h-10"
             />
