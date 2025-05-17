@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Hero from "@/components/home/Hero";
 import About from "@/components/home/About";
 import Services from "@/components/home/Services";
+import News from "@/components/home/News";
 import CallToAction from "@/components/home/CallToAction";
 import Contact from "@/components/home/Contact";
 import { motion, useScroll, useSpring } from "framer-motion";
@@ -23,6 +24,7 @@ const Home = () => {
       <Hero />
       <About />
       <Services />
+      <News />
       <CallToAction />
       <Contact />
     </>
