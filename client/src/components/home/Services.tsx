@@ -37,6 +37,7 @@ const Services = () => {
               description={service.description}
               imageSrc={service.imageSrc}
               index={index}
+              detailUrl={service.detailUrl}
             />
           ))}
         </motion.div>
