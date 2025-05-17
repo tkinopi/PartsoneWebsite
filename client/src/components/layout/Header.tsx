@@ -119,9 +119,9 @@ const Header = () => {
               asChild 
               className="bg-primary hover:bg-primary/90 text-white px-6"
             >
-              <a href="#contact" onClick={(e) => handleNavLinkClick(e, false)}>
+              <Link href="/contact">
                 お問い合わせ
-              </a>
+              </Link>
             </Button>
           </div>
 
@@ -179,9 +179,9 @@ const Header = () => {
                     asChild 
                     className="bg-primary hover:bg-primary/90 text-white w-full"
                   >
-                    <a href="#contact" onClick={(e) => handleNavLinkClick(e, false)}>
+                    <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
                       お問い合わせ
-                    </a>
+                    </Link>
                   </Button>
                 </div>
               </nav>
