@@ -34,11 +34,11 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Company Info */}
             <div>
-              <div className="bg-black p-2 inline-block rounded mb-4">
+              <div className="bg-secondary p-1 inline-block rounded mb-4">
                 <img
                   src={partsoneLogoPath}
                   alt="Partsone Logo"
-                  className="h-12"
+                  className="h-8"
                 />
               </div>
               <p className="text-gray-400 mb-4">

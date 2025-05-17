@@ -70,7 +70,7 @@ const Header = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 relative z-10 -ml-4">
-            <div className="bg-black p-1 rounded">
+            <div className="bg-secondary p-1 rounded">
               <img 
                 src={partsoneLogoPath} 
                 alt="Partsone Logo" 
