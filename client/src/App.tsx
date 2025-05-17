@@ -8,6 +8,7 @@ import Home from "@/pages/Home";
 import SourcingBusiness from "@/pages/SourcingBusiness";
 import DigitalPlatformBusiness from "@/pages/DigitalPlatformBusiness";
 import Company from "@/pages/Company";
+import NewsDetail from "@/pages/NewsDetail";
 
 // 会社情報ページ
 import MissionPage from "@/pages/company/mission";
@@ -93,6 +94,9 @@ function Router() {
           <Route path="/recruit/new-graduate" component={NewGraduatePage} />
           <Route path="/recruit/mid-career" component={MidCareerPage} />
           <Route path="/recruit/apply" component={ApplyPage} />
+          
+          {/* ニュース詳細ページ */}
+          <Route path="/news/:id" component={NewsDetail} />
           
           <Route component={NotFound} />
         </Switch>
