@@ -1,14 +1,16 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { Link } from "wouter";
 
 interface ServiceCardProps {
   title: string;
   description: string;
   imageSrc: string;
   index: number;
+  detailUrl?: string;
 }
 
-const ServiceCard = ({ title, description, imageSrc, index }: ServiceCardProps) => {
+const ServiceCard = ({ title, description, imageSrc, index, detailUrl }: ServiceCardProps) => {
   const item = {
     hidden: { opacity: 0, y: 20 },
     visible: { 
