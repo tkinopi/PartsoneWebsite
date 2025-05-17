@@ -83,20 +83,12 @@ const SourcingServiceDetail = () => {
           />
           
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="bg-gradient-to-r from-rose-500 to-pink-600 rounded-3xl overflow-hidden shadow-xl order-2 md:order-1">
+            <div className="bg-gradient-to-r from-gray-800 to-black rounded-3xl overflow-hidden shadow-xl order-2 md:order-1">
               <img 
                 src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" 
                 alt="ソーシング事業"
-                className="w-full h-auto object-cover mix-blend-overlay opacity-60"
+                className="w-full h-auto object-cover"
               />
-              <div className="p-8">
-                <h3 className="text-white text-2xl font-bold mb-4">
-                  ソーシング事業
-                </h3>
-                <p className="text-white/90">
-                  企業のニーズに合わせた人材・設備のトータルソリューション
-                </p>
-              </div>
             </div>
             <div className="order-1 md:order-2">
               <motion.h3 

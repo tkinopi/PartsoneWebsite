@@ -103,20 +103,12 @@ const DigitalServiceDetail = () => {
                 企業が直面する様々な課題に対してソリューションを提供しています。
               </motion.p>
             </div>
-            <div className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-3xl overflow-hidden shadow-xl">
+            <div className="bg-gradient-to-r from-red-600 to-red-800 rounded-3xl overflow-hidden shadow-xl">
               <img 
                 src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" 
                 alt="デジタルプラットフォーム事業"
-                className="w-full h-auto object-cover mix-blend-overlay opacity-60"
+                className="w-full h-auto object-cover"
               />
-              <div className="p-8">
-                <h3 className="text-white text-2xl font-bold mb-4">
-                  デジタルプラットフォーム事業
-                </h3>
-                <p className="text-white/90">
-                  クラウド、AI、IoTなどの技術を活用したビジネスソリューション
-                </p>
-              </div>
             </div>
           </div>
         </div>

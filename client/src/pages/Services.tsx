@@ -74,26 +74,15 @@ const Services = () => {
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
                 className={`rounded-2xl overflow-hidden relative order-1 ${index % 2 === 0 ? 'md:order-2' : 'md:order-1'}`}
-                style={{ 
-                  minHeight: '400px',
-                  background: index % 2 === 0 ? 'linear-gradient(45deg, #4F46E5, #9333EA)' : 'linear-gradient(45deg, #F43F5E, #EC4899)'
-                }}
               >
-                <div className="absolute inset-0 p-8 flex flex-col justify-center">
-                  <h3 className="text-white text-3xl font-bold mb-4">{service.title}</h3>
-                  <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 shadow-xl">
+                <div className="p-6 flex flex-col justify-center">
+                  <div className="bg-white rounded-xl p-4 shadow-xl">
                     <img
                       src={service.imageSrc}
                       alt={service.title}
                       className="rounded-lg w-full h-auto object-cover"
+                      style={{ height: '350px' }}
                     />
-                    <div className="mt-4 p-4 bg-white/20 backdrop-blur-sm rounded-lg">
-                      <p className="text-white font-medium">
-                        {service.title === "デジタルプラットフォーム事業" 
-                          ? "最新テクノロジーを活用した革新的なソリューション"
-                          : "オーダーメイドのソーシングソリューション"}
-                      </p>
-                    </div>
                   </div>
                 </div>
               </motion.div>
