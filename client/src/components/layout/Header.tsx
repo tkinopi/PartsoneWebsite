@@ -30,7 +30,7 @@ const Header = () => {
 
   const navLinks = [
     { href: "#about", label: "会社情報" },
-    { href: "#services", label: "サービス" },
+    { href: "#services", label: "事業内容" },
     { href: "#company", label: "企業文化" },
     { href: "#contact", label: "お問い合わせ" },
   ];

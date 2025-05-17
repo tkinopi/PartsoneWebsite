@@ -19,12 +19,12 @@ const Services = () => {
     <section id="services" className="py-20 bg-muted">
       <Container>
         <SectionTitle 
-          title="サービス" 
-          subtitle="Partsoneは多様なレンタルサービスを提供し、お客様のビジネスニーズに合わせたソリューションをご用意しています。" 
+          title="事業内容" 
+          subtitle="Partsoneはソーシング事業とデジタルプラットフォーム事業を通じて、お客様のビジネスニーズに合わせたソリューションをご用意しています。" 
         />
         
         <motion.div 
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid md:grid-cols-2 gap-8"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}

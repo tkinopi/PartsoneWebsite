@@ -1,35 +1,15 @@
 // Services data
 export const servicesData = [
   {
-    title: "OA機器レンタル",
-    description: "パソコン、プリンター、複合機など、オフィスで必要なOA機器を幅広く取り揃えています。短期から長期のレンタルに対応し、メンテナンスサービスも提供します。",
-    imageSrc: "https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+    title: "ソーシング事業",
+    description: "企業が必要とする優秀な人材を効率的に発掘し、最適なマッチングを実現します。国内外のプロフェッショナル人材ネットワークを活用し、企業の成長をサポートします。",
+    imageSrc: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
   },
   {
-    title: "イベント機材レンタル",
-    description: "展示会、セミナー、企業イベントなどで必要なプロジェクター、音響機器、ディスプレイなどの機材を提供します。設置・撤去サービスも含めた総合的なサポートが可能です。",
-    imageSrc: "https://images.unsplash.com/photo-1560169897-fc0cdbdfa4d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-  },
-  {
-    title: "ネットワーク機器レンタル",
-    description: "ルーター、スイッチ、Wi-Fiアクセスポイントなど、ネットワーク構築に必要な機器を提供します。専門スタッフによる設定・導入サポートで安心してご利用いただけます。",
-    imageSrc: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-  },
-  {
-    title: "モバイル端末レンタル",
-    description: "タブレット、スマートフォン、モバイルWi-Fiなど、外出先でも仕事ができる環境をサポートします。最新機種を常に取り揃え、必要なアプリケーションのインストールも承ります。",
-    imageSrc: "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-  },
-  {
-    title: "オフィス家具レンタル",
-    description: "デスク、チェア、キャビネット、会議テーブルなど、オフィスに必要な家具を幅広く取り揃えています。オフィスのレイアウト設計から配送・設置まで一貫したサービスを提供します。",
-    imageSrc: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-  },
-  {
-    title: "計測機器レンタル",
-    description: "精密な測定が必要な現場向けに、最新の計測機器をレンタルしています。定期的なキャリブレーションとメンテナンスを行い、正確な測定結果をお約束します。",
-    imageSrc: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-  },
+    title: "デジタルプラットフォーム事業",
+    description: "最新テクノロジーを活用した独自のデジタルプラットフォームを提供し、企業のDX推進を支援します。クラウドベースのソリューションにより、ビジネスの効率化と新たな価値創造を実現します。",
+    imageSrc: "https://images.unsplash.com/photo-1558655146-d09347e92766?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+  }
 ];
 
 // Team members data

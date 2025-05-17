@@ -6,12 +6,8 @@ import partsoneLogoPath from "@/assets/partsone_logo.png";
 const Footer = () => {
   const footerLinks = {
     services: [
-      { label: "OA機器レンタル", href: "#services" },
-      { label: "イベント機材レンタル", href: "#services" },
-      { label: "ネットワーク機器レンタル", href: "#services" },
-      { label: "モバイル端末レンタル", href: "#services" },
-      { label: "オフィス家具レンタル", href: "#services" },
-      { label: "計測機器レンタル", href: "#services" },
+      { label: "ソーシング事業", href: "#services" },
+      { label: "デジタルプラットフォーム事業", href: "#services" },
     ],
     company: [
       { label: "会社概要", href: "#about" },
@@ -53,7 +49,7 @@ const Footer = () => {
 
             {/* Services Links */}
             <div>
-              <h4 className="text-lg font-bold mb-4">サービス</h4>
+              <h4 className="text-lg font-bold mb-4">事業内容</h4>
               <ul className="space-y-2">
                 {footerLinks.services.map((link, index) => (
                   <li key={index}>
