@@ -30,6 +30,7 @@ const Header = () => {
 
   const navLinks = [
     { href: "/company/mission", label: "会社情報", isPage: true },
+    { href: "/recruit/culture", label: "採用情報", isPage: true },
     { href: "#services", label: "事業内容", isPage: false },
   ];
 
