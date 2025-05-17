@@ -48,12 +48,12 @@ export default function NewsDetail() {
         <div className="max-w-4xl mx-auto">
           {/* パンくずリスト */}
           <div className="flex items-center gap-2 text-sm text-muted-foreground mb-6">
-            <Link href="/">
-              <a className="hover:text-primary">ホーム</a>
+            <Link href="/" className="hover:text-primary">
+              ホーム
             </Link>
             <span>/</span>
-            <Link href="/#news">
-              <a className="hover:text-primary">ニュース</a>
+            <Link href="/#news" className="hover:text-primary">
+              ニュース
             </Link>
             <span>/</span>
             <span className="text-gray-600 truncate">{newsItem.title}</span>
@@ -93,22 +93,20 @@ export default function NewsDetail() {
               <h2 className="text-2xl font-bold mb-6">関連ニュース</h2>
               <div className="grid md:grid-cols-3 gap-6">
                 {relatedNews.map((news) => (
-                  <Link key={news.id} href={`/news/${news.id}`}>
-                    <a className="group block">
-                      <div className="aspect-video mb-4 overflow-hidden rounded-lg">
-                        <img
-                          src={news.imageSrc}
-                          alt={news.title}
-                          className="w-full h-full object-cover transition-transform group-hover:scale-105"
-                        />
-                      </div>
-                      <time className="text-sm text-muted-foreground" dateTime={news.date}>
-                        {formatDate(news.date)}
-                      </time>
-                      <h3 className="font-bold text-lg mt-2 group-hover:text-primary transition-colors">
-                        {news.title}
-                      </h3>
-                    </a>
+                  <Link key={news.id} href={`/news/${news.id}`} className="group block">
+                    <div className="aspect-video mb-4 overflow-hidden rounded-lg">
+                      <img
+                        src={news.imageSrc}
+                        alt={news.title}
+                        className="w-full h-full object-cover transition-transform group-hover:scale-105"
+                      />
+                    </div>
+                    <time className="text-sm text-muted-foreground" dateTime={news.date}>
+                      {formatDate(news.date)}
+                    </time>
+                    <h3 className="font-bold text-lg mt-2 group-hover:text-primary transition-colors">
+                      {news.title}
+                    </h3>
                   </Link>
                 ))}
               </div>
@@ -117,12 +115,10 @@ export default function NewsDetail() {
           
           {/* 戻るボタン */}
           <div className="mt-12 text-center">
-            <Button variant="outline" asChild>
+            <Button variant="outline" asChild className="flex items-center gap-2">
               <Link href="/#news">
-                <a className="flex items-center gap-2">
-                  <ChevronLeft className="h-4 w-4" />
-                  ニュース一覧に戻る
-                </a>
+                <ChevronLeft className="h-4 w-4" />
+                ニュース一覧に戻る
               </Link>
             </Button>
           </div>
