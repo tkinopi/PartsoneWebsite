@@ -29,13 +29,19 @@ const Header = () => {
   }, [isMenuOpen]);
 
   const navLinks = [
-    { href: "#about", label: "会社情報" },
-    { href: "#services", label: "事業内容" },
-    { href: "#company", label: "企業文化" },
-    { href: "#contact", label: "お問い合わせ" },
+    { href: "/company", label: "会社情報", isPage: true },
+    { href: "#services", label: "事業内容", isPage: false },
+    { href: "#contact", label: "お問い合わせ", isPage: false },
   ];
 
-  const handleNavLinkClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  const handleNavLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, isPage = false) => {
+    if (isPage) {
+      // For links to separate pages, let the default navigation happen
+      setIsMenuOpen(false);
+      return;
+    }
+    
+    // For anchor links within the page
     e.preventDefault();
     const href = e.currentTarget.getAttribute("href");
     if (!href) return;
@@ -77,20 +83,30 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                onClick={handleNavLinkClick}
-                className="font-medium text-white hover:text-primary transition-colors duration-200"
-              >
-                {link.label}
-              </a>
+              link.isPage ? (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="font-medium text-white hover:text-primary transition-colors duration-200"
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  onClick={(e) => handleNavLinkClick(e, false)}
+                  className="font-medium text-white hover:text-primary transition-colors duration-200"
+                >
+                  {link.label}
+                </a>
+              )
             ))}
             <Button 
               asChild 
               className="bg-primary hover:bg-primary/90 text-white"
             >
-              <a href="#contact" onClick={handleNavLinkClick}>
+              <a href="#contact" onClick={(e) => handleNavLinkClick(e, false)}>
                 お問い合わせ
               </a>
             </Button>
@@ -125,20 +141,31 @@ const Header = () => {
             >
               <nav className="flex flex-col space-y-4 pt-4 pb-6">
                 {navLinks.map((link) => (
-                  <a
-                    key={link.href}
-                    href={link.href}
-                    onClick={handleNavLinkClick}
-                    className="font-medium text-white hover:text-primary transition-colors text-lg py-2"
-                  >
-                    {link.label}
-                  </a>
+                  link.isPage ? (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      onClick={() => setIsMenuOpen(false)}
+                      className="font-medium text-white hover:text-primary transition-colors text-lg py-2"
+                    >
+                      {link.label}
+                    </Link>
+                  ) : (
+                    <a
+                      key={link.href}
+                      href={link.href}
+                      onClick={(e) => handleNavLinkClick(e, false)}
+                      className="font-medium text-white hover:text-primary transition-colors text-lg py-2"
+                    >
+                      {link.label}
+                    </a>
+                  )
                 ))}
                 <Button 
                   asChild 
                   className="bg-primary hover:bg-primary/90 text-white w-full mt-2"
                 >
-                  <a href="#contact" onClick={handleNavLinkClick}>
+                  <a href="#contact" onClick={(e) => handleNavLinkClick(e, false)}>
                     お問い合わせ
                   </a>
                 </Button>

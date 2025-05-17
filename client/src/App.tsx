@@ -7,6 +7,7 @@ import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import SourcingBusiness from "@/pages/SourcingBusiness";
 import DigitalPlatformBusiness from "@/pages/DigitalPlatformBusiness";
+import Company from "@/pages/Company";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { useEffect } from "react";
@@ -54,6 +55,7 @@ function Router() {
           <Route path="/" component={Home} />
           <Route path="/business/sourcing" component={SourcingBusiness} />
           <Route path="/business/digital-platform" component={DigitalPlatformBusiness} />
+          <Route path="/company" component={Company} />
           <Route component={NotFound} />
         </Switch>
       </main>
