@@ -36,23 +36,6 @@ const OverviewSection = () => {
             </tbody>
           </table>
         </div>
-        
-        <div className="mt-12">
-          <h3 className="text-xl font-bold mb-6">アクセスマップ</h3>
-          <div className="aspect-[16/9] bg-slate-200 rounded-lg shadow-md flex items-center justify-center">
-            <p className="text-lg text-muted-foreground">
-              ここに地図が表示されます
-            </p>
-          </div>
-          <div className="mt-6">
-            <h4 className="font-semibold mb-2">交通アクセス</h4>
-            <ul className="space-y-2 text-muted-foreground">
-              <li>• JR東京駅 丸の内北口より徒歩5分</li>
-              <li>• 東京メトロ丸ノ内線 東京駅より徒歩3分</li>
-              <li>• 東京メトロ千代田線 二重橋前駅より徒歩4分</li>
-            </ul>
-          </div>
-        </div>
       </div>
     </section>
   );
