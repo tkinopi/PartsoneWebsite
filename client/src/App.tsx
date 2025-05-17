@@ -8,6 +8,8 @@ import Home from "@/pages/Home";
 import SourcingBusiness from "@/pages/SourcingBusiness";
 import DigitalPlatformBusiness from "@/pages/DigitalPlatformBusiness";
 import Company from "@/pages/Company";
+
+// 会社情報ページ
 import MissionPage from "@/pages/company/mission";
 import PhilosophyPage from "@/pages/company/philosophy";
 import VisionPage from "@/pages/company/vision";
@@ -15,6 +17,16 @@ import HistoryPage from "@/pages/company/history";
 import ValuesPage from "@/pages/company/values";
 import TeamPage from "@/pages/company/team";
 import OverviewPage from "@/pages/company/overview";
+
+// 採用情報ページ
+import CulturePage from "@/pages/recruit/culture";
+import MessagePage from "@/pages/recruit/message";
+import InterviewPage from "@/pages/recruit/interview";
+import InternPage from "@/pages/recruit/intern";
+import NewGraduatePage from "@/pages/recruit/new-graduate";
+import MidCareerPage from "@/pages/recruit/mid-career";
+import ApplyPage from "@/pages/recruit/apply";
+
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { useEffect } from "react";
@@ -62,6 +74,8 @@ function Router() {
           <Route path="/" component={Home} />
           <Route path="/business/sourcing" component={SourcingBusiness} />
           <Route path="/business/digital-platform" component={DigitalPlatformBusiness} />
+          
+          {/* 会社情報ページ */}
           <Route path="/company" component={Company} />
           <Route path="/company/mission" component={MissionPage} />
           <Route path="/company/philosophy" component={PhilosophyPage} />
@@ -70,6 +84,16 @@ function Router() {
           <Route path="/company/values" component={ValuesPage} />
           <Route path="/company/team" component={TeamPage} />
           <Route path="/company/overview" component={OverviewPage} />
+          
+          {/* 採用情報ページ */}
+          <Route path="/recruit/culture" component={CulturePage} />
+          <Route path="/recruit/message" component={MessagePage} />
+          <Route path="/recruit/interview" component={InterviewPage} />
+          <Route path="/recruit/intern" component={InternPage} />
+          <Route path="/recruit/new-graduate" component={NewGraduatePage} />
+          <Route path="/recruit/mid-career" component={MidCareerPage} />
+          <Route path="/recruit/apply" component={ApplyPage} />
+          
           <Route component={NotFound} />
         </Switch>
       </main>
