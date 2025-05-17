@@ -13,7 +13,7 @@ const Office = () => {
           subtitle="Partsoneのオフィス所在地です" 
         />
         
-        <div className="grid grid-cols-1 md:grid-cols-[1fr,2fr] gap-12 items-center mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr,3fr] gap-12 items-start mt-12">
           {/* 左側: 住所情報 */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -57,7 +57,7 @@ const Office = () => {
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.4466958174574!2d139.7362071!3d35.6736375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b835942e165%3A0xb4897f1f4264c771!2z44CSMzMzLTAwMDcg5p2x5Lqs6YO95rGf5p2x5Yy65p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1656406277215!5m2!1sja!2sjp" 
               width="100%" 
-              height="550" 
+              height="700" 
               style={{ border: 0 }} 
               allowFullScreen 
               loading="lazy" 
