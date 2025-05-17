@@ -31,7 +31,6 @@ const Header = () => {
   const navLinks = [
     { href: "/company", label: "会社情報", isPage: true },
     { href: "#services", label: "事業内容", isPage: false },
-    { href: "#contact", label: "お問い合わせ", isPage: false },
   ];
 
   const handleNavLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, isPage = false) => {
@@ -70,12 +69,12 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2 relative z-10 -ml-2">
+          <Link href="/" className="flex items-center space-x-2 relative z-10 -ml-4">
             <div className="bg-black p-1 rounded">
               <img 
                 src={partsoneLogoPath} 
                 alt="Partsone Logo" 
-                className="h-10"
+                className="h-8"
               />
             </div>
           </Link>
