@@ -41,13 +41,13 @@ const ServiceCard = ({ title, description, imageSrc, index, detailUrl }: Service
         <p className="text-muted-foreground mb-4">
           {description}
         </p>
-        <a 
-          href="#" 
+        <Link 
+          to={detailUrl || "#"} 
           className="text-primary font-medium flex items-center hover:text-primary/80 transition-colors group"
         >
           詳細を見る
           <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-        </a>
+        </Link>
       </div>
     </motion.div>
   );
