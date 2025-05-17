@@ -78,7 +78,7 @@ const News = () => {
         
         <div className="mt-12 text-center">
           <Button variant="outline" className="text-primary border-primary hover:bg-primary/10" asChild>
-            <Link href="/news/nagoya-office-expansion">
+            <Link href="/news">
               ニュース一覧を見る
             </Link>
           </Button>
