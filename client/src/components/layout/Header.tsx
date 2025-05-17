@@ -79,32 +79,31 @@ const Header = () => {
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-12 mr-4">
-            {navLinks.map((link) => (
-              link.isPage ? (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="font-medium text-white hover:text-primary transition-colors duration-200"
-                >
-                  {link.label}
-                </Link>
-              ) : (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  onClick={(e) => handleNavLinkClick(e, false)}
-                  className="font-medium text-white hover:text-primary transition-colors duration-200"
-                >
-                  {link.label}
-                </a>
-              )
-            ))}
-          </nav>
-
-          {/* Contact Button - Desktop */}
-          <div className="hidden md:block">
+          {/* Desktop Navigation and Contact Button */}
+          <div className="hidden md:flex items-center space-x-8">
+            <nav className="flex items-center space-x-8">
+              {navLinks.map((link) => (
+                link.isPage ? (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="font-medium text-white hover:text-primary transition-colors duration-200"
+                  >
+                    {link.label}
+                  </Link>
+                ) : (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    onClick={(e) => handleNavLinkClick(e, false)}
+                    className="font-medium text-white hover:text-primary transition-colors duration-200"
+                  >
+                    {link.label}
+                  </a>
+                )
+              ))}
+            </nav>
+            
             <Button 
               asChild 
               className="bg-primary hover:bg-primary/90 text-white px-6"
