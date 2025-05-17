@@ -8,6 +8,13 @@ import Home from "@/pages/Home";
 import SourcingBusiness from "@/pages/SourcingBusiness";
 import DigitalPlatformBusiness from "@/pages/DigitalPlatformBusiness";
 import Company from "@/pages/Company";
+import MissionPage from "@/pages/company/mission";
+import PhilosophyPage from "@/pages/company/philosophy";
+import VisionPage from "@/pages/company/vision";
+import HistoryPage from "@/pages/company/history";
+import ValuesPage from "@/pages/company/values";
+import TeamPage from "@/pages/company/team";
+import OverviewPage from "@/pages/company/overview";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { useEffect } from "react";
@@ -56,6 +63,13 @@ function Router() {
           <Route path="/business/sourcing" component={SourcingBusiness} />
           <Route path="/business/digital-platform" component={DigitalPlatformBusiness} />
           <Route path="/company" component={Company} />
+          <Route path="/company/mission" component={MissionPage} />
+          <Route path="/company/philosophy" component={PhilosophyPage} />
+          <Route path="/company/vision" component={VisionPage} />
+          <Route path="/company/history" component={HistoryPage} />
+          <Route path="/company/values" component={ValuesPage} />
+          <Route path="/company/team" component={TeamPage} />
+          <Route path="/company/overview" component={OverviewPage} />
           <Route component={NotFound} />
         </Switch>
       </main>

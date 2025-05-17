@@ -29,7 +29,7 @@ const Header = () => {
   }, [isMenuOpen]);
 
   const navLinks = [
-    { href: "/company", label: "会社情報", isPage: true },
+    { href: "/company/mission", label: "会社情報", isPage: true },
     { href: "#services", label: "事業内容", isPage: false },
   ];
 
