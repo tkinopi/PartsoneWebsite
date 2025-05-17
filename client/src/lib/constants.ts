@@ -41,3 +41,28 @@ export const teamMembersData = [
     imageSrc: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400",
   },
 ];
+
+// News data
+export const newsData = [
+  {
+    date: "2023-12-15",
+    title: "名古屋オフィス拡張のお知らせ",
+    content: "急速な事業拡大に伴い、名古屋オフィスを拡張いたしました。新たな施設では、より充実したサービス提供と地域密着型のサポートが可能になります。",
+    category: "お知らせ",
+    imageSrc: "https://images.unsplash.com/photo-1622126977176-95c3c6b9020c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=300"
+  },
+  {
+    date: "2023-11-10",
+    title: "新サービス「デジタルオートメーション」開始",
+    content: "企業のデジタル化を加速させる新サービス「デジタルオートメーション」の提供を開始しました。業務プロセスの効率化と自動化を実現し、お客様のビジネス競争力を高めます。",
+    category: "サービス",
+    imageSrc: "https://images.unsplash.com/photo-1606146485015-f914557b74be?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=300"
+  },
+  {
+    date: "2023-10-05",
+    title: "デジタルトランスフォーメーション推進セミナー開催",
+    content: "11月15日に東京本社にて「企業成長のためのDX戦略」をテーマにしたセミナーを開催します。最新のデジタル技術活用事例と導入のポイントについて解説します。",
+    category: "イベント",
+    imageSrc: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=300"
+  },
+];

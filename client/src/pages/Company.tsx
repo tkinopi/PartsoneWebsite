@@ -65,8 +65,23 @@ const Company = () => {
           </div>
         </section>
         
-        {/* Vision Section */}
+        {/* 企業理念 */}
         <section className="mb-24 bg-muted py-16 rounded-lg">
+          <SectionTitle 
+            title="企業理念" 
+            subtitle="変化・挑戦・貢献" 
+            center={true}
+          />
+          <div className="mt-8 max-w-3xl mx-auto text-center">
+            <p className="text-xl leading-relaxed">
+              「変化・挑戦・貢献」を基本理念とし、社会に貢献し続ける企業を目指しています。
+              多様な価値観を持つお客様のニーズを的確に捉え、最適なソリューションを提供します。
+            </p>
+          </div>
+        </section>
+        
+        {/* Vision Section */}
+        <section className="mb-24">
           <SectionTitle 
             title="ビジョン" 
             subtitle="私たちが目指す未来" 
@@ -79,6 +94,42 @@ const Company = () => {
               私たちは単なるサービス提供者ではなく、お客様と共に未来を創るパートナーとして、
               ビジネスの新たな可能性を切り開きます。
             </p>
+          </div>
+        </section>
+        
+        {/* 会社沿革 */}
+        <section className="mb-24">
+          <SectionTitle 
+            title="会社沿革" 
+            subtitle="Partsoneの歩み" 
+            center={true}
+          />
+          <div className="mt-12 max-w-3xl mx-auto">
+            <div className="space-y-10 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
+              {[
+                { year: "2007年", event: "パーツワン株式会社 設立" },
+                { year: "2010年", event: "東京支社 開設" },
+                { year: "2015年", event: "大阪支社 開設" },
+                { year: "2018年", event: "ISO9001認証取得" },
+                { year: "2020年", event: "福岡支社 開設" },
+                { year: "2022年", event: "名古屋支社 開設" },
+              ].map((item, index) => (
+                <div key={index} className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                  <div className="flex items-center justify-center w-10 h-10 rounded-full border border-slate-200 bg-white shadow-md shadow-slate-200 text-primary z-10 md:mx-0">
+                    <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M12 8v4l2 2"></path>
+                      <circle cx="12" cy="12" r="10"></circle>
+                    </svg>
+                  </div>
+                  <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded-xl bg-white shadow-md">
+                    <div className="flex items-center justify-between space-x-2 mb-1">
+                      <div className="font-bold text-xl text-primary">{item.year}</div>
+                    </div>
+                    <div className="text-slate-800">{item.event}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
         
