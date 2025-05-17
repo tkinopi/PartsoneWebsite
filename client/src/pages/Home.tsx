@@ -4,7 +4,7 @@ import About from "@/components/home/About";
 import Services from "@/components/home/Services";
 import News from "@/components/home/News";
 import CallToAction from "@/components/home/CallToAction";
-import Contact from "@/components/home/Contact";
+import Office from "@/components/home/Office";
 import { motion, useScroll, useSpring } from "framer-motion";
 
 const Home = () => {
@@ -26,7 +26,7 @@ const Home = () => {
       <Services />
       <News />
       <CallToAction />
-      <Contact />
+      <Office />
     </>
   );
 };

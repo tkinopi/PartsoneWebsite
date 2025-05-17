@@ -13,6 +13,7 @@ import NewsList from "@/pages/NewsList";
 import Services from "@/pages/Services";
 import DigitalServiceDetail from "@/pages/DigitalServiceDetail";
 import SourcingServiceDetail from "@/pages/SourcingServiceDetail";
+import Contact from "@/pages/Contact";
 
 // 会社情報ページ
 import MissionPage from "@/pages/company/mission";
@@ -107,6 +108,9 @@ function Router() {
           <Route path="/services" component={Services} />
           <Route path="/services/digital-platform" component={DigitalServiceDetail} />
           <Route path="/services/sourcing" component={SourcingServiceDetail} />
+          
+          {/* お問い合わせページ */}
+          <Route path="/contact" component={Contact} />
           
           <Route component={NotFound} />
         </Switch>
