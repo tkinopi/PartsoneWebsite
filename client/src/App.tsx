@@ -10,6 +10,9 @@ import DigitalPlatformBusiness from "@/pages/DigitalPlatformBusiness";
 import Company from "@/pages/Company";
 import NewsDetail from "@/pages/NewsDetail";
 import NewsList from "@/pages/NewsList";
+import Services from "@/pages/Services";
+import DigitalServiceDetail from "@/pages/DigitalServiceDetail";
+import SourcingServiceDetail from "@/pages/SourcingServiceDetail";
 
 // 会社情報ページ
 import MissionPage from "@/pages/company/mission";
@@ -99,6 +102,11 @@ function Router() {
           {/* ニュース関連ページ */}
           <Route path="/news" component={NewsList} />
           <Route path="/news/:id" component={NewsDetail} />
+
+          {/* 事業内容ページ */}
+          <Route path="/services" component={Services} />
+          <Route path="/services/digital-platform" component={DigitalServiceDetail} />
+          <Route path="/services/sourcing" component={SourcingServiceDetail} />
           
           <Route component={NotFound} />
         </Switch>
