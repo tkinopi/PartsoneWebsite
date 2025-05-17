@@ -36,10 +36,10 @@ const CallToAction = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl font-bold text-white mb-4">
-            お客様のニーズに合わせたレンタルソリューション
+            お客様のビジネス成長をサポートするソリューション
           </h2>
           <p className="text-lg text-white mb-8">
-            Partsoneは、お客様のビジネスに最適な機器やサービスを提供し、コスト削減と業務効率化をサポートします。
+            Partsoneは、ソーシング事業とデジタルプラットフォーム事業を通じて、お客様のビジネス課題解決と成長戦略をサポートします。
           </p>
           <Button 
             size="lg" 
