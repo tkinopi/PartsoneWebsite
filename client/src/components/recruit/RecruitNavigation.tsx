@@ -22,16 +22,13 @@ const RecruitNavigation = ({ activeSection }: NavigationProps) => {
           <Link 
             key={section.id} 
             href={`/recruit/${section.id}`}
+            className={`block py-2 px-4 rounded-md transition-colors ${
+              activeSection === section.id 
+                ? 'bg-primary/10 text-primary font-medium' 
+                : 'hover:bg-gray-100'
+            }`}
           >
-            <a 
-              className={`block py-2 px-4 rounded-md transition-colors ${
-                activeSection === section.id 
-                  ? 'bg-primary/10 text-primary font-medium' 
-                  : 'hover:bg-gray-100'
-              }`}
-            >
-              {section.label}
-            </a>
+            {section.label}
           </Link>
         ))}
       </nav>
