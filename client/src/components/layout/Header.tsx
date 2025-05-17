@@ -70,7 +70,7 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2 relative z-10">
+          <Link href="/" className="flex items-center space-x-2 relative z-10 -ml-2">
             <div className="bg-black p-1 rounded">
               <img 
                 src={partsoneLogoPath} 
@@ -81,7 +81,7 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-12 mr-4">
             {navLinks.map((link) => (
               link.isPage ? (
                 <Link
@@ -102,15 +102,19 @@ const Header = () => {
                 </a>
               )
             ))}
+          </nav>
+
+          {/* Contact Button - Desktop */}
+          <div className="hidden md:block">
             <Button 
               asChild 
-              className="bg-primary hover:bg-primary/90 text-white"
+              className="bg-primary hover:bg-primary/90 text-white px-6"
             >
               <a href="#contact" onClick={(e) => handleNavLinkClick(e, false)}>
                 お問い合わせ
               </a>
             </Button>
-          </nav>
+          </div>
 
           {/* Mobile Menu Toggle */}
           <button
@@ -161,14 +165,16 @@ const Header = () => {
                     </a>
                   )
                 ))}
-                <Button 
-                  asChild 
-                  className="bg-primary hover:bg-primary/90 text-white w-full mt-2"
-                >
-                  <a href="#contact" onClick={(e) => handleNavLinkClick(e, false)}>
-                    お問い合わせ
-                  </a>
-                </Button>
+                <div className="pt-2">
+                  <Button 
+                    asChild 
+                    className="bg-primary hover:bg-primary/90 text-white w-full"
+                  >
+                    <a href="#contact" onClick={(e) => handleNavLinkClick(e, false)}>
+                      お問い合わせ
+                    </a>
+                  </Button>
+                </div>
               </nav>
             </motion.div>
           )}
