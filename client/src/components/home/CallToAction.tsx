@@ -1,22 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { motion } from "framer-motion";
+import { Link } from "wouter";
 
 const CallToAction = () => {
-  const handleScrollToContact = () => {
-    const contactSection = document.getElementById("contact");
-    if (contactSection) {
-      const headerOffset = 80;
-      const sectionPosition = contactSection.getBoundingClientRect().top;
-      const offsetPosition = sectionPosition + window.pageYOffset - headerOffset;
-      
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-    }
-  };
-
   return (
     <section 
       className="relative py-20" 
@@ -44,9 +31,11 @@ const CallToAction = () => {
           <Button 
             size="lg" 
             className="bg-primary hover:bg-primary/90 text-white"
-            onClick={handleScrollToContact}
+            asChild
           >
-            今すぐ相談する
+            <Link href="/contact">
+              今すぐ相談する
+            </Link>
           </Button>
         </motion.div>
       </Container>
