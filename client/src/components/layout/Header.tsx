@@ -46,6 +46,16 @@ const Header = () => {
     const href = e.currentTarget.getAttribute("href");
     if (!href) return;
     
+    // If the link is to an anchor on the home page but we're not on the home page
+    const isHomePage = window.location.pathname === "/" || window.location.pathname === "";
+    
+    if (!isHomePage && href.startsWith("#")) {
+      // Redirect to home page with the anchor
+      window.location.href = `/${href}`;
+      return;
+    }
+    
+    // For anchor links on the current page
     const targetElement = document.querySelector(href);
     if (!targetElement) return;
     
