@@ -1,11 +1,11 @@
-import { Link } from "wouter";
+import SideNavigation from "@/components/shared/SideNavigation";
 
 interface NavigationProps {
   activeSection: string;
 }
 
 const RecruitNavigation = ({ activeSection }: NavigationProps) => {
-  const sections = [
+  const recruitNavItems = [
     { id: "culture", label: "企業文化" },
     { id: "message", label: "代表メッセージ" },
     { id: "interview", label: "社員インタビュー" },
@@ -15,23 +15,11 @@ const RecruitNavigation = ({ activeSection }: NavigationProps) => {
   ];
 
   return (
-    <div className="bg-white border border-gray-100 p-4 rounded sticky top-24">
-      <nav className="space-y-1">
-        {sections.map(section => (
-          <Link 
-            key={section.id} 
-            href={`/recruit/${section.id}`}
-            className={`block py-2 px-3 text-sm transition-colors ${
-              activeSection === section.id 
-                ? 'text-primary font-medium border-l-2 border-primary pl-2' 
-                : 'text-gray-600 hover:text-primary'
-            }`}
-          >
-            {section.label}
-          </Link>
-        ))}
-      </nav>
-    </div>
+    <SideNavigation 
+      items={recruitNavItems}
+      activeSection={activeSection}
+      baseUrl="/recruit"
+    />
   );
 };
 
