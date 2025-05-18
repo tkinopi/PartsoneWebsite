@@ -51,7 +51,7 @@ const Hero = () => {
             <Button 
               variant="outline" 
               size="lg" 
-              className="bg-white text-secondary hover:bg-secondary/10"
+              className="bg-white text-secondary hover:bg-secondary/10 hover:text-white"
               onClick={() => handleScrollToSection("contact")}
             >
               お問い合わせ

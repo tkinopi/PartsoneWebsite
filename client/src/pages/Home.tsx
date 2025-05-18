@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import Hero from "@/components/home/Hero";
-import About from "@/components/home/About";
 import Services from "@/components/home/Services";
 import News from "@/components/home/News";
 import CallToAction from "@/components/home/CallToAction";
@@ -22,7 +21,6 @@ const Home = () => {
         style={{ scaleX }}
       />
       <Hero />
-      <About />
       <Services />
       <News />
       <CallToAction />
