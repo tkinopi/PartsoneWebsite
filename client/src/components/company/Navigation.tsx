@@ -16,17 +16,16 @@ const companyNavItems = [
 
 const Navigation = ({ activeSection }: NavigationProps) => {
   return (
-    <div className="bg-muted p-6 rounded-lg sticky top-24">
-      <h3 className="text-xl font-bold mb-6">会社情報</h3>
-      <nav className="space-y-2">
+    <div className="bg-white border border-gray-100 p-4 rounded sticky top-24">
+      <nav className="space-y-1">
         {companyNavItems.map((item) => (
           <Link
             key={item.id}
             href={`/company/${item.id}`}
-            className={`block p-3 rounded-md transition-colors ${
+            className={`block py-2 px-3 text-sm transition-colors ${
               activeSection === item.id
-                ? "bg-primary text-white font-medium"
-                : "hover:bg-slate-200"
+                ? "text-primary font-medium border-l-2 border-primary pl-2"
+                : "text-gray-600 hover:text-primary"
             }`}
           >
             {item.label}

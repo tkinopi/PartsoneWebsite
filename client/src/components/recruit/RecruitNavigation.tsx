@@ -15,17 +15,16 @@ const RecruitNavigation = ({ activeSection }: NavigationProps) => {
   ];
 
   return (
-    <div className="sticky top-24 bg-white p-6 rounded-lg shadow-md">
-      <h3 className="font-bold text-xl text-primary mb-6">採用情報</h3>
-      <nav className="space-y-2">
+    <div className="bg-white border border-gray-100 p-4 rounded sticky top-24">
+      <nav className="space-y-1">
         {sections.map(section => (
           <Link 
             key={section.id} 
             href={`/recruit/${section.id}`}
-            className={`block py-2 px-4 rounded-md transition-colors ${
+            className={`block py-2 px-3 text-sm transition-colors ${
               activeSection === section.id 
-                ? 'bg-primary/10 text-primary font-medium' 
-                : 'hover:bg-gray-100'
+                ? 'text-primary font-medium border-l-2 border-primary pl-2' 
+                : 'text-gray-600 hover:text-primary'
             }`}
           >
             {section.label}

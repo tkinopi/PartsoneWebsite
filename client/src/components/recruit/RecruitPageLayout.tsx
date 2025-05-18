@@ -11,14 +11,14 @@ const RecruitPageLayout = ({ children, activeSection }: RecruitPageLayoutProps) 
   return (
     <div className="pt-24 pb-16">
       <Container>
-        <div className="flex flex-col md:flex-row gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-[200px,1fr] gap-10">
           {/* Left Navigation */}
-          <div className="md:w-1/4">
+          <div>
             <RecruitNavigation activeSection={activeSection} />
           </div>
           
           {/* Right Content */}
-          <div className="md:w-3/4">
+          <div>
             {children}
           </div>
         </div>
