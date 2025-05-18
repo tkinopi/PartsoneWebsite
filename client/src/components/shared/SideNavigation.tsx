@@ -12,13 +12,13 @@ interface SideNavigationProps {
 }
 
 const SideNavigation = ({ items, activeSection, baseUrl }: SideNavigationProps) => {
-  // 縦並びのナビゲーション（画面サイズに関わらず表示）
   return (
     <div className="bg-white rounded p-2">
-      <nav className="space-y-1">
+      {/* 大画面では縦並び */}
+      <nav className="hidden md:block space-y-1">
         {items.map((item) => (
           <Link
-            key={item.id}
+            key={`desktop-${item.id}`}
             href={`${baseUrl}/${item.id}`}
             className={`block py-2 px-3 text-sm transition-colors ${
               activeSection === item.id
@@ -29,6 +29,25 @@ const SideNavigation = ({ items, activeSection, baseUrl }: SideNavigationProps) 
             {item.label}
           </Link>
         ))}
+      </nav>
+      
+      {/* スマホサイズでは横並び */}
+      <nav className="md:hidden">
+        <div className="flex flex-wrap gap-2">
+          {items.map((item) => (
+            <Link
+              key={`mobile-${item.id}`}
+              href={`${baseUrl}/${item.id}`}
+              className={`py-1 px-3 text-xs rounded-full transition-colors ${
+                activeSection === item.id
+                  ? "bg-primary/10 text-primary font-medium"
+                  : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+              }`}
+            >
+              {item.label}
+            </Link>
+          ))}
+        </div>
       </nav>
     </div>
   );
