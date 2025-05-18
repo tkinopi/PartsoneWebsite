@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { motion } from "framer-motion";
+import { Link } from "wouter";
 
 const Hero = () => {
   const handleScrollToSection = (sectionId: string) => {
@@ -52,9 +53,11 @@ const Hero = () => {
               variant="outline" 
               size="lg" 
               className="bg-white text-secondary hover:bg-secondary/10 hover:text-white"
-              onClick={() => handleScrollToSection("contact")}
+              asChild
             >
-              お問い合わせ
+              <Link href="/contact">
+                お問い合わせ
+              </Link>
             </Button>
           </div>
         </motion.div>
