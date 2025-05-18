@@ -7,8 +7,8 @@ import partsoneLogoPath from "@/assets/partsone_logo.png";
 const Footer = () => {
   const footerLinks = {
     services: [
-      { label: "ソーシング事業", href: "/sourcing-business" },
-      { label: "デジタルプラットフォーム事業", href: "/digital-platform-business" },
+      { label: "ソーシング事業", href: "/business/sourcing" },
+      { label: "デジタルプラットフォーム事業", href: "/business/digital-platform" },
     ],
     company: [
       { label: "ミッション", href: "/company/mission" },
