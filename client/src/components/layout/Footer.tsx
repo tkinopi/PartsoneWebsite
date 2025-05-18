@@ -28,12 +28,12 @@ const Footer = () => {
       { label: "中途採用", href: "/recruit/mid-career" },
     ],
     support: [
-      { label: "お問い合わせ", href: "#contact" },
-      { label: "よくある質問", href: "#" },
-      { label: "サポートセンター", href: "#" },
-      { label: "個人情報保護方針", href: "#" },
-      { label: "利用規約", href: "#" },
-      { label: "サイトマップ", href: "#" },
+      { label: "お問い合わせ", href: "/contact" },
+      { label: "よくある質問", href: "/support/faq" },
+      { label: "サポートセンター", href: "/support/center" },
+      { label: "個人情報保護方針", href: "/support/privacy-policy" },
+      { label: "利用規約", href: "/support/terms" },
+      { label: "サイトマップ", href: "/support/sitemap" },
     ],
   };
 
@@ -114,12 +114,12 @@ const Footer = () => {
               <ul className="space-y-2">
                 {footerLinks.support.map((link, index) => (
                   <li key={index}>
-                    <a
+                    <Link
                       href={link.href}
                       className="text-gray-400 hover:text-white transition-colors"
                     >
                       {link.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>

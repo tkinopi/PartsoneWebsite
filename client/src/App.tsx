@@ -15,6 +15,13 @@ import DigitalServiceDetail from "@/pages/DigitalServiceDetail";
 import SourcingServiceDetail from "@/pages/SourcingServiceDetail";
 import Contact from "@/pages/Contact";
 
+// サポートページ
+import FAQPage from "@/pages/support/FAQ";
+import SupportCenterPage from "@/pages/support/SupportCenter";
+import PrivacyPolicyPage from "@/pages/support/PrivacyPolicy";
+import TermsPage from "@/pages/support/Terms";
+import SitemapPage from "@/pages/support/Sitemap";
+
 // 会社情報ページ
 import MissionPage from "@/pages/company/mission";
 import PhilosophyPage from "@/pages/company/philosophy";
@@ -111,6 +118,13 @@ function Router() {
           
           {/* お問い合わせページ */}
           <Route path="/contact" component={Contact} />
+
+          {/* サポートページ */}
+          <Route path="/support/faq" component={FAQPage} />
+          <Route path="/support/center" component={SupportCenterPage} />
+          <Route path="/support/privacy-policy" component={PrivacyPolicyPage} />
+          <Route path="/support/terms" component={TermsPage} />
+          <Route path="/support/sitemap" component={SitemapPage} />
           
           <Route component={NotFound} />
         </Switch>
