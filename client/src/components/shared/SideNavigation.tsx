@@ -14,29 +14,12 @@ interface SideNavigationProps {
 const SideNavigation = ({ items, activeSection, baseUrl }: SideNavigationProps) => {
   return (
     <div className="bg-white border border-gray-100 p-4 rounded sticky top-24">
-      {/* デスクトップ表示 - 縦並び */}
-      <nav className="hidden md:block space-y-1">
-        {items.map((item) => (
-          <Link
-            key={`desktop-${item.id}`}
-            href={`${baseUrl}/${item.id}`}
-            className={`block py-2 px-3 text-sm transition-colors ${
-              activeSection === item.id
-                ? "text-primary font-medium border-l-2 border-primary pl-2"
-                : "text-gray-600 hover:text-primary"
-            }`}
-          >
-            {item.label}
-          </Link>
-        ))}
-      </nav>
-      
-      {/* モバイル表示 - 横並び */}
-      <nav className="md:hidden">
+      {/* 現在の画面の大きさに関わらず横並びで表示 */}
+      <nav>
         <div className="flex flex-wrap gap-2">
           {items.map((item) => (
             <Link
-              key={`mobile-${item.id}`}
+              key={item.id}
               href={`${baseUrl}/${item.id}`}
               className={`inline-block py-1 px-3 text-xs rounded-full transition-colors ${
                 activeSection === item.id
