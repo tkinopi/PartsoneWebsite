@@ -19,6 +19,14 @@ const Footer = () => {
       { label: "私たちのチーム", href: "/company/team" },
       { label: "会社概要", href: "/company/overview" },
     ],
+    recruit: [
+      { label: "企業文化", href: "/recruit/culture" },
+      { label: "代表メッセージ", href: "/recruit/message" },
+      { label: "社員インタビュー", href: "/recruit/interview" },
+      { label: "インターンシップ", href: "/recruit/intern" },
+      { label: "新卒採用", href: "/recruit/new-graduate" },
+      { label: "中途採用", href: "/recruit/mid-career" },
+    ],
     support: [
       { label: "お問い合わせ", href: "#contact" },
       { label: "よくある質問", href: "#" },
@@ -33,9 +41,9 @@ const Footer = () => {
     <footer className="bg-secondary text-white">
       <Container>
         <div className="py-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8">
             {/* Company Info */}
-            <div>
+            <div className="lg:col-span-3">
               <div className="bg-secondary p-1 inline-block rounded mb-4">
                 <img
                   src={partsoneLogoPath}
@@ -50,7 +58,7 @@ const Footer = () => {
             </div>
 
             {/* Services Links */}
-            <div>
+            <div className="lg:col-span-2">
               <h4 className="text-lg font-bold mb-4">事業内容</h4>
               <ul className="space-y-2">
                 {footerLinks.services.map((link, index) => (
@@ -67,7 +75,7 @@ const Footer = () => {
             </div>
 
             {/* Company Links */}
-            <div>
+            <div className="lg:col-span-2">
               <h4 className="text-lg font-bold mb-4">会社情報</h4>
               <ul className="space-y-2">
                 {footerLinks.company.map((link, index) => (
@@ -82,9 +90,26 @@ const Footer = () => {
                 ))}
               </ul>
             </div>
+            
+            {/* Recruit Links */}
+            <div className="lg:col-span-2">
+              <h4 className="text-lg font-bold mb-4">採用情報</h4>
+              <ul className="space-y-2">
+                {footerLinks.recruit.map((link, index) => (
+                  <li key={index}>
+                    <Link
+                      href={link.href}
+                      className="text-gray-400 hover:text-white transition-colors"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
             {/* Support Links */}
-            <div>
+            <div className="lg:col-span-2">
               <h4 className="text-lg font-bold mb-4">サポート</h4>
               <ul className="space-y-2">
                 {footerLinks.support.map((link, index) => (
