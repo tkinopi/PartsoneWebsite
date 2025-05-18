@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { SocialIcons } from "@/components/ui/social-icons";
+import { Link } from "wouter";
 import partsoneLogoPath from "@/assets/partsone_logo.png";
 
 const Footer = () => {
@@ -10,12 +11,13 @@ const Footer = () => {
       { label: "デジタルプラットフォーム事業", href: "#services" },
     ],
     company: [
-      { label: "会社概要", href: "#about" },
-      { label: "企業理念", href: "#company" },
-      { label: "チーム", href: "#company" },
-      { label: "採用情報", href: "#" },
-      { label: "ニュース", href: "#" },
-      { label: "ブログ", href: "#" },
+      { label: "ミッション", href: "/company/mission" },
+      { label: "企業理念", href: "/company/philosophy" },
+      { label: "ビジョン", href: "/company/vision" },
+      { label: "バリュー", href: "/company/values" },
+      { label: "会社沿革", href: "/company/history" },
+      { label: "私たちのチーム", href: "/company/team" },
+      { label: "会社概要", href: "/company/overview" },
     ],
     support: [
       { label: "お問い合わせ", href: "#contact" },
@@ -70,12 +72,12 @@ const Footer = () => {
               <ul className="space-y-2">
                 {footerLinks.company.map((link, index) => (
                   <li key={index}>
-                    <a
+                    <Link
                       href={link.href}
                       className="text-gray-400 hover:text-white transition-colors"
                     >
                       {link.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
