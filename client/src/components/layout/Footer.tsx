@@ -7,8 +7,8 @@ import partsoneLogoPath from "@/assets/partsone_logo.png";
 const Footer = () => {
   const footerLinks = {
     services: [
-      { label: "ソーシング事業", href: "#services" },
-      { label: "デジタルプラットフォーム事業", href: "#services" },
+      { label: "ソーシング事業", href: "/sourcing-business" },
+      { label: "デジタルプラットフォーム事業", href: "/digital-platform-business" },
     ],
     company: [
       { label: "ミッション", href: "/company/mission" },
@@ -55,12 +55,12 @@ const Footer = () => {
               <ul className="space-y-2">
                 {footerLinks.services.map((link, index) => (
                   <li key={index}>
-                    <a
+                    <Link
                       href={link.href}
                       className="text-gray-400 hover:text-white transition-colors"
                     >
                       {link.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
