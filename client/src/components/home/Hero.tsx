@@ -39,7 +39,8 @@ const Hero = () => {
             部品を再生し、産業を刷新する。
           </h1>
           <p className="text-xl text-white mb-8">
-            自動車アフターパーツの流通をデジタルで最適化し、リサイクルの常識を変革。
+            自動車アフターパーツの流通をデジタルで最適化し、<br />
+            リサイクルの常識を変革。
           </p>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
             <Button 
