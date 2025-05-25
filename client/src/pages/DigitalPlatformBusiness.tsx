@@ -66,7 +66,7 @@ const DigitalPlatformBusiness = () => {
                 </p>
               </div>
               <div>
-                <h4 className="font-semibold text-lg">サービスの特徴</h4>
+                <h4 className="font-semibold text-lg">Uzoneアプリの特徴</h4>
                 <ul className="list-disc list-inside text-muted-foreground ml-4 mt-2 space-y-1">
                   <li>アプリからのワンクリック発注・出品システム</li>
                   <li>業界に特化した最適化された流通プラットフォーム</li>
