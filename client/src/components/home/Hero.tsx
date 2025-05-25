@@ -36,11 +36,11 @@ const Hero = () => {
           className="max-w-3xl"
         >
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
-            部品を再生し、産業を刷新する。
+            リサイクルから、世界を動かす。
           </h1>
           <p className="text-xl text-white mb-8">
-            自動車アフターパーツの流通をデジタルで最適化し、<br />
-            リサイクルの常識を変革。
+            私たちの技術とアイデアで、<br />
+            産業と環境を両立させる。
           </p>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
             <Button 
