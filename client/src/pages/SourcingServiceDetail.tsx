@@ -86,7 +86,7 @@ const SourcingServiceDetail = () => {
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="bg-gradient-to-r from-gray-800 to-black rounded-3xl overflow-hidden shadow-xl order-2 md:order-1">
               <img 
-                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" 
+                src={sourcingBusinessImage} 
                 alt="ソーシング事業"
                 className="w-full h-auto object-cover"
               />
