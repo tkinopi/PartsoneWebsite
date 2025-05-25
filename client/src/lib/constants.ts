@@ -1,3 +1,5 @@
+import digitalPlatformImage from "../assets/digital_platform.png";
+
 // Services data
 export const servicesData = [
   {
@@ -9,7 +11,7 @@ export const servicesData = [
   {
     title: "デジタルプラットフォーム事業",
     description: "最新テクノロジーを活用した独自のデジタルプラットフォームを提供し、企業のDX推進を支援します。クラウドベースのソリューションにより、ビジネスの効率化と新たな価値創造を実現します。",
-    imageSrc: "https://images.unsplash.com/photo-1558655146-d09347e92766?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+    imageSrc: digitalPlatformImage,
     detailUrl: "/services/digital-platform"
   }
 ];
