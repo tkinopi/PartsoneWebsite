@@ -21,8 +21,10 @@ const ActionLinks = () => {
                 <div className="flex justify-center mb-4 overflow-hidden h-12 relative">
                   <Heart className="w-12 h-12 text-white group-hover:text-primary transition-all duration-300 transform translate-y-12 group-hover:translate-y-0 absolute" />
                 </div>
-                <h3 className="text-4xl font-bold text-white mb-3 group-hover:text-primary transition-colors">Careers</h3>
-                <p className="text-white/80">循環型社会を共に実現しませんか？</p>
+                <div className="transition-all duration-300 transform group-hover:translate-y-0" style={{ transform: 'translateY(30px)' }}>
+                  <h3 className="text-4xl font-bold text-white mb-3 group-hover:text-primary transition-colors">Careers</h3>
+                  <p className="text-white/80">循環型社会を共に実現しませんか？</p>
+                </div>
               </div>
             </Link>
 
@@ -32,8 +34,10 @@ const ActionLinks = () => {
                 <div className="flex justify-center mb-4 overflow-hidden h-12 relative">
                   <MessageCircle className="w-12 h-12 text-primary transition-all duration-300 transform translate-y-12 group-hover:translate-y-0 absolute" />
                 </div>
-                <h3 className="text-4xl font-bold text-primary mb-3">Contact</h3>
-                <p className="text-gray-600">お気軽にお問い合わせください</p>
+                <div className="transition-all duration-300 transform group-hover:translate-y-0" style={{ transform: 'translateY(30px)' }}>
+                  <h3 className="text-4xl font-bold text-primary mb-3">Contact</h3>
+                  <p className="text-gray-600">お気軽にお問い合わせください</p>
+                </div>
               </div>
             </Link>
           </div>
