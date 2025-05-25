@@ -9,7 +9,7 @@ const PhilosophySection = () => {
         center={true}
       />
       <div className="mt-12 max-w-3xl mx-auto text-center">
-        <h3 className="text-4xl font-bold mb-8 text-primary">挑戦と共創で、循環型社会のエンジンになる</h3>
+        <h3 className="text-4xl font-bold mb-8 text-primary">挑戦と共創で、<br />循環型社会のエンジンになる</h3>
         <p className="text-xl leading-relaxed mb-10">
           私たちは「挑む・創る・つなぐ」を核に、<br />
           廃棄されるはずの資源に新たな価値を灯し続けます。<br />
