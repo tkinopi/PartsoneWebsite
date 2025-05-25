@@ -5,7 +5,7 @@ import sourcingBusinessImage from "../assets/sourcing_business.jpg";
 export const servicesData = [
   {
     title: "ソーシング事業",
-    description: "企業が必要とする優秀な人材を効率的に発掘し、最適なマッチングを実現します。国内外のプロフェッショナル人材ネットワークを活用し、企業の成長をサポートします。",
+    description: "廃車から取り外された自動車部品に新たな価値を見出し、必要とするお客様へ提供する環境配慮型ビジネスです。本来廃棄される部品の再利用を促進し、CO2削減と地球温暖化防止に貢献します。",
     imageSrc: sourcingBusinessImage,
     detailUrl: "/services/sourcing"
   },

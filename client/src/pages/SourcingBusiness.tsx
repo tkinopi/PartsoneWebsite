@@ -53,24 +53,24 @@ const SourcingBusiness = () => {
           <div>
             <h3 className="text-2xl font-bold mb-4">事業概要</h3>
             <p className="text-muted-foreground mb-6">
-              Partsoneのソーシング事業は、企業の人材ニーズに応じた最適な人材を発掘し、効率的なマッチングを実現するサービスです。国内外のプロフェッショナル人材ネットワークを活用し、企業の成長に不可欠な人材確保をサポートします。
+              Partsoneのソーシング事業は、廃棄される予定の自動車から取り外された部品に新しい価値を見出し、必要としているお客様へつなげる環境配慮型ビジネスです。本来ゴミとなる運命だった自動車部品を再利用することで、資源の有効活用とCO2削減を促進し、地球温暖化防止に貢献しています。
             </p>
             <div className="space-y-4">
               <div>
                 <h4 className="font-semibold text-lg">主なサービス</h4>
                 <ul className="list-disc list-inside text-muted-foreground ml-4 mt-2 space-y-1">
-                  <li>エグゼクティブサーチ</li>
-                  <li>専門人材の採用支援</li>
-                  <li>グローバル人材の発掘</li>
-                  <li>採用戦略コンサルティング</li>
+                  <li>高品質リサイクル自動車部品の提供</li>
+                  <li>希少部品のソーシングサービス</li>
+                  <li>環境負荷低減コンサルティング</li>
+                  <li>自動車部品の価値評価サービス</li>
                 </ul>
               </div>
               <div>
                 <h4 className="font-semibold text-lg">サービスの特徴</h4>
                 <ul className="list-disc list-inside text-muted-foreground ml-4 mt-2 space-y-1">
-                  <li>独自の人材データベースによる高精度マッチング</li>
-                  <li>業界に特化したスペシャリストによる選考プロセス</li>
-                  <li>採用後のフォローアップ体制</li>
+                  <li>徹底した品質管理による信頼性の高い部品提供</li>
+                  <li>豊富な在庫と幅広い取引ネットワーク</li>
+                  <li>環境貢献度の可視化と数値化</li>
                 </ul>
               </div>
             </div>
@@ -81,21 +81,21 @@ const SourcingBusiness = () => {
           <h3 className="text-2xl font-bold mb-8">ソーシング事業の強み</h3>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h4 className="text-xl font-semibold mb-3 text-primary">豊富なネットワーク</h4>
+              <h4 className="text-xl font-semibold mb-3 text-primary">環境貢献</h4>
               <p className="text-muted-foreground">
-                国内外の多様な業界・職種の人材とのネットワークを保有し、企業のニーズに合わせた人材紹介が可能です。
+                リサイクル自動車部品の流通促進により、CO2排出量削減と資源の有効活用を実現。環境負荷を数値化し、お客様の環境貢献を可視化します。
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h4 className="text-xl font-semibold mb-3 text-primary">専門知識と経験</h4>
+              <h4 className="text-xl font-semibold mb-3 text-primary">品質と信頼性</h4>
               <p className="text-muted-foreground">
-                各業界に精通したコンサルタントが、クライアント企業と候補者の双方の要望を理解し、最適なマッチングを実現します。
+                厳格な品質基準に基づいた部品選定と検査体制により、リサイクル部品でありながら高い信頼性と安全性を確保しています。
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h4 className="text-xl font-semibold mb-3 text-primary">カスタマイズされたアプローチ</h4>
+              <h4 className="text-xl font-semibold mb-3 text-primary">価値の再創造</h4>
               <p className="text-muted-foreground">
-                企業の文化や将来ビジョンを理解した上で、単なるスキルマッチングだけでなく、長期的な視点での人材採用を支援します。
+                廃棄される予定だった部品に新たな価値を見出し、必要とするお客様へ届けることで、「廃棄物」を「資源」へと変換する価値創造を実現します。
               </p>
             </div>
           </div>
@@ -105,15 +105,15 @@ const SourcingBusiness = () => {
           <h3 className="text-2xl font-bold mb-6">導入事例</h3>
           <div className="space-y-6">
             <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h4 className="text-xl font-semibold mb-2">A社（IT業界）</h4>
+              <h4 className="text-xl font-semibold mb-2">A社（自動車修理工場）</h4>
               <p className="text-muted-foreground mb-4">
-                海外進出に向けてグローバル人材の採用が課題となっていたA社に対し、複数の国際経験豊富なエンジニアとマーケティング専門家を紹介。予定より早い海外拠点設立に貢献しました。
+                修理費用の低減と環境貢献を両立したいA社に対し、高品質リサイクル部品を継続的に供給。年間約30%のコスト削減と、約15トンのCO2排出削減に貢献しました。
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h4 className="text-xl font-semibold mb-2">B社（製造業）</h4>
+              <h4 className="text-xl font-semibold mb-2">B社（自動車部品販売業）</h4>
               <p className="text-muted-foreground mb-4">
-                デジタルトランスフォーメーションを推進するにあたり、DX戦略を主導できる人材が不足していたB社に対し、IT業界での実績がある経営幹部を紹介。社内のデジタル化を成功させました。
+                廃盤となった希少部品の入手に苦慮していたB社に対し、独自の調達ネットワークを活用して必要部品を提供。顧客満足度の向上と環境負荷低減の両方を実現しました。
               </p>
             </div>
           </div>
@@ -122,7 +122,7 @@ const SourcingBusiness = () => {
         <div className="mt-16 text-center">
           <h3 className="text-2xl font-bold mb-8">お問い合わせ</h3>
           <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
-            Partsoneのソーシング事業についてのご質問や、詳細な情報をご希望の方は、お気軽にお問い合わせください。専門のコンサルタントがご対応いたします。
+            Partsoneのリサイクル自動車部品ソーシング事業についてのご質問や、お探しの部品に関するお問い合わせは、お気軽にご連絡ください。環境貢献とコスト削減の両立を実現するソリューションをご提案いたします。
           </p>
           <Button 
             className="bg-primary hover:bg-primary/90 text-white"
