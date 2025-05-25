@@ -17,11 +17,11 @@ const ActionLinks = () => {
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl w-full">
             {/* キャリアカード */}
             <Link href="/recruit/culture" className="block group">
-              <div className="border border-white/30 rounded-lg p-10 text-center h-full transition-all duration-300 group-hover:border-primary/70">
-                <div className="flex justify-center mb-4 overflow-hidden h-12 relative">
+              <div className="border border-white/30 rounded-lg p-10 text-center h-full min-h-[200px] transition-all duration-300 group-hover:border-primary/70 flex flex-col justify-center items-center relative">
+                <div className="absolute top-10 left-0 right-0 flex justify-center overflow-hidden h-12">
                   <Heart className="w-12 h-12 text-white group-hover:text-primary transition-all duration-300 transform translate-y-12 group-hover:translate-y-0 absolute" />
                 </div>
-                <div className="transition-all duration-300 transform group-hover:translate-y-0" style={{ transform: 'translateY(30px)' }}>
+                <div className="transition-all duration-300">
                   <h3 className="text-4xl font-bold text-white mb-3 group-hover:text-primary transition-colors">Careers</h3>
                   <p className="text-white/80">循環型社会を共に実現しませんか？</p>
                 </div>
@@ -30,11 +30,11 @@ const ActionLinks = () => {
 
             {/* コンタクトカード */}
             <Link href="/contact" className="block group">
-              <div className="bg-white rounded-lg p-10 text-center h-full transition-all duration-300 group-hover:border-primary group-hover:border">
-                <div className="flex justify-center mb-4 overflow-hidden h-12 relative">
+              <div className="bg-white rounded-lg p-10 text-center h-full min-h-[200px] transition-all duration-300 group-hover:border-primary group-hover:border flex flex-col justify-center items-center relative">
+                <div className="absolute top-10 left-0 right-0 flex justify-center overflow-hidden h-12">
                   <MessageCircle className="w-12 h-12 text-primary transition-all duration-300 transform translate-y-12 group-hover:translate-y-0 absolute" />
                 </div>
-                <div className="transition-all duration-300 transform group-hover:translate-y-0" style={{ transform: 'translateY(30px)' }}>
+                <div className="transition-all duration-300">
                   <h3 className="text-4xl font-bold text-primary mb-3">Contact</h3>
                   <p className="text-gray-600">お気軽にお問い合わせください</p>
                 </div>
