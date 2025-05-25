@@ -36,7 +36,7 @@ const Hero = () => {
           className="max-w-3xl"
         >
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
-            部品を再生し、産業を刷新する。<span className="text-primary">Partsone</span>
+            部品を再生し、産業を刷新する。
           </h1>
           <p className="text-xl text-white mb-8">
             自動車アフターパーツの流通をデジタルで最適化し、リサイクルの常識を変革。
