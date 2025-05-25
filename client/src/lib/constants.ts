@@ -11,7 +11,7 @@ export const servicesData = [
   },
   {
     title: "デジタルプラットフォーム事業",
-    description: "最新テクノロジーを活用した独自のデジタルプラットフォームを提供し、企業のDX推進を支援します。クラウドベースのソリューションにより、ビジネスの効率化と新たな価値創造を実現します。",
+    description: "自動車のリサイクルパーツに特化した流通プラットフォーム「Uzone」を自社開発しています。売り手と買い手が直接やり取りできるアプリを通じて流通コストを削減し、リサイクルパーツの流通促進とCO2削減に貢献します。",
     imageSrc: digitalPlatformImage,
     detailUrl: "/services/digital-platform"
   }

@@ -91,7 +91,7 @@ const DigitalServiceDetail = () => {
                 transition={{ duration: 0.5 }}
                 className="text-2xl font-bold mb-6"
               >
-                "最新テクノロジーで、ビジネスの可能性を広げる"
+                "産業リサイクルの常識を変える"
               </motion.h3>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -99,9 +99,9 @@ const DigitalServiceDetail = () => {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-lg text-gray-700 leading-relaxed mb-8"
               >
-                Partsoneのデジタルプラットフォーム事業は、企業のデジタルトランスフォーメーション（DX）を総合的に支援します。
-                最新のテクノロジーを活用し、業務効率化やビジネスモデルの革新、顧客体験の向上など、
-                企業が直面する様々な課題に対してソリューションを提供しています。
+                Partsoneは自動車のリサイクルパーツに特化した流通プラットフォーム「Uzone」を自社開発しています。
+                売り手と買い手が直接やり取りできるアプリを通じて流通コストを削減し、リサイクルパーツの流通を促進。
+                ファックスや電話に頼った現状をITで解決し、さらなるCO²削減を実現します。
               </motion.p>
             </div>
             <div className="bg-gradient-to-r from-red-600 to-red-800 rounded-3xl overflow-hidden shadow-xl">

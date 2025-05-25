@@ -53,24 +53,24 @@ const DigitalPlatformBusiness = () => {
           <div>
             <h3 className="text-2xl font-bold mb-4">事業概要</h3>
             <p className="text-muted-foreground mb-6">
-              Partsoneのデジタルプラットフォーム事業は、最新テクノロジーを活用した独自のデジタルプラットフォームを提供し、企業のDX（デジタルトランスフォーメーション）推進を包括的に支援します。クラウドベースのソリューションにより、ビジネスプロセスの効率化と新たな価値創造を実現します。
+              Partsoneのデジタルプラットフォーム事業は、自動車のリサイクルパーツに特化した流通プラットフォーム「Uzone」を自社開発しています。売り手と買い手が直接やり取りすることで流通コストを下げ、リサイクルパーツの流通を促進し、さらなるCO²削減を実現します。
             </p>
             <div className="space-y-4">
               <div>
-                <h4 className="font-semibold text-lg">主なサービス</h4>
-                <ul className="list-disc list-inside text-muted-foreground ml-4 mt-2 space-y-1">
-                  <li>クラウドベースの業務管理プラットフォーム</li>
-                  <li>データ分析・可視化ツール</li>
-                  <li>AI活用ソリューション</li>
-                  <li>カスタマイズ可能なビジネスアプリケーション</li>
-                </ul>
+                <h4 className="font-semibold text-lg">産業リサイクルの常識を変える</h4>
+                <p className="text-muted-foreground mt-2 mb-3">
+                  そのための1手は"リサイクルのハードルを下げる"こと。現在の自動車パーツにおけるリサイクルの主な連絡手段はファックス・電話・LINEなど。手間も時間もかかる現状をITで解決します。
+                </p>
+                <p className="text-muted-foreground">
+                  アプリからワンクリックでリサイクル注文ができるようになれば。アプリからワンクリックで自社在庫を出品できれば。産業リサイクルの常識が変わり、リサイクルがあたりまえになる。そんな世界をパーツワンが自社開発で作ります。
+                </p>
               </div>
               <div>
                 <h4 className="font-semibold text-lg">サービスの特徴</h4>
                 <ul className="list-disc list-inside text-muted-foreground ml-4 mt-2 space-y-1">
-                  <li>業界別に最適化された専用プラットフォーム</li>
-                  <li>簡単な操作で高度なデータ活用が可能</li>
-                  <li>他システムとの連携性の高さ</li>
+                  <li>アプリからのワンクリック発注・出品システム</li>
+                  <li>業界に特化した最適化された流通プラットフォーム</li>
+                  <li>直接取引による流通コスト削減</li>
                 </ul>
               </div>
             </div>
@@ -78,42 +78,42 @@ const DigitalPlatformBusiness = () => {
         </div>
 
         <div className="mt-16">
-          <h3 className="text-2xl font-bold mb-8">デジタルプラットフォーム事業の強み</h3>
+          <h3 className="text-2xl font-bold mb-8">自社アプリ開発の強み</h3>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h4 className="text-xl font-semibold mb-3 text-primary">柔軟なカスタマイズ</h4>
+              <h4 className="text-xl font-semibold mb-3 text-primary">アプリ開発の発案者はインターン生</h4>
               <p className="text-muted-foreground">
-                お客様の業種や規模、業務プロセスに合わせて柔軟にカスタマイズが可能です。必要な機能だけを選択し、最適なシステムを構築できます。
+                Uzone（自社アプリ）の発案者は2020年当時のインターン生。社内プレゼン会での発表がUZoneの原点です。社歴や年齢、役職に関係なく、フラットに意見を言い合える環境と、実行に移せる体制があります。
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h4 className="text-xl font-semibold mb-3 text-primary">先進技術の活用</h4>
+              <h4 className="text-xl font-semibold mb-3 text-primary">個別プロジェクト</h4>
               <p className="text-muted-foreground">
-                AI、機械学習、ビッグデータ分析などの先進技術を活用し、データドリブンな意思決定と業務効率化を支援します。
+                社内の勤怠アプリや、自社ECサイト構築、ファックスの自動化、HP作成などUzoneの開発と同時並行で行われる個別のプロジェクトがあります。別プロジェクトによって新しい技術が身につき、開発アイデアが生まれます。
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h4 className="text-xl font-semibold mb-3 text-primary">段階的な導入支援</h4>
+              <h4 className="text-xl font-semibold mb-3 text-primary">チーム開発</h4>
               <p className="text-muted-foreground">
-                初期コンサルティングからシステム導入、運用サポートまで一貫したサービスを提供し、企業のDX推進を持続的にサポートします。
+                エンジニア組織は、フロントエンド開発、バックエンド開発、データ分析、OCR（画像認識技術）、HPS（自社ECサイト）などのチームに分かれながら、チームの垣根を超えたコミュニケーションを大切にしています。
               </p>
             </div>
           </div>
         </div>
 
         <div className="mt-16 bg-muted p-8 rounded-lg">
-          <h3 className="text-2xl font-bold mb-6">導入事例</h3>
+          <h3 className="text-2xl font-bold mb-6">Uzoneアプリの特徴と期待される効果</h3>
           <div className="space-y-6">
             <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h4 className="text-xl font-semibold mb-2">C社（小売業）</h4>
+              <h4 className="text-xl font-semibold mb-2">リサイクルのハードル低減</h4>
               <p className="text-muted-foreground mb-4">
-                複数店舗の在庫管理と顧客データ分析に課題を抱えていたC社に対し、クラウドベースの統合管理システムを導入。リアルタイムでの在庫確認と顧客行動分析が可能となり、売上が15%向上しました。
+                従来のファックスや電話に頼った自動車リサイクルパーツの取引をアプリで完結できるようにすることで、手間と時間を大幅に削減。ワンクリックで注文・出品ができるため、リサイクルへの障壁を下げ、より多くの事業者が参加できる環境を実現します。
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h4 className="text-xl font-semibold mb-2">D社（サービス業）</h4>
+              <h4 className="text-xl font-semibold mb-2">流通コスト削減と環境貢献</h4>
               <p className="text-muted-foreground mb-4">
-                顧客対応の効率化と品質向上を目指していたD社に対し、AIを活用したカスタマーサポートプラットフォームを導入。対応時間の短縮と顧客満足度の向上を実現しました。
+                売り手と買い手が直接取引できるプラットフォームを提供することで、中間マージンを削減し流通コストを下げます。これにより、リサイクルパーツの流通量が増加し、新品製造に比べて大幅なCO2削減効果が期待できます。産業リサイクルの常識を変え、持続可能な社会の実現に貢献します。
               </p>
             </div>
           </div>
@@ -122,7 +122,7 @@ const DigitalPlatformBusiness = () => {
         <div className="mt-16 text-center">
           <h3 className="text-2xl font-bold mb-8">お問い合わせ</h3>
           <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
-            Partsoneのデジタルプラットフォーム事業についてのご質問や、詳細な情報をご希望の方は、お気軽にお問い合わせください。専門のコンサルタントがご対応いたします。
+            Partsoneの自動車リサイクルパーツ流通アプリ「Uzone」についてのご質問や、詳細な情報をご希望の方は、お気軽にお問い合わせください。専門スタッフがご対応いたします。
           </p>
           <Button 
             className="bg-primary hover:bg-primary/90 text-white"
