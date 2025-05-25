@@ -9,7 +9,7 @@ const MissionSection = () => {
         center={true}
       />
       <div className="mt-12 max-w-3xl mx-auto text-center">
-        <h3 className="text-3xl font-bold mb-8 text-primary">産業リサイクルの常識を変え、地球とビジネスを循環させる</h3>
+        <h3 className="text-3xl font-bold mb-8 text-primary">産業リサイクルの常識を変え、<br />地球とビジネスを循環させる</h3>
         <p className="text-xl leading-relaxed mb-8">
           私たちParts Oneは、廃棄されるはずの自動車パーツに再び命を吹き込み、
           CO₂排出を削減しながら企業の収益性も高める循環型サプライチェーンを提供します。
