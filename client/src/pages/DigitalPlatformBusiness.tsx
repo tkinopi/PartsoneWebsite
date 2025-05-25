@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { useLocation } from "wouter";
 import { useEffect } from "react";
+import digitalPlatformImage from "../assets/digital_platform.png";
 
 const DigitalPlatformBusiness = () => {
   const [_, setLocation] = useLocation();
@@ -44,9 +45,9 @@ const DigitalPlatformBusiness = () => {
         <div className="grid md:grid-cols-2 gap-12 mt-12 items-center">
           <div>
             <img 
-              src="https://images.unsplash.com/photo-1558655146-d09347e92766?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+              src={digitalPlatformImage} 
               alt="デジタルプラットフォーム事業" 
-              className="rounded-lg shadow-lg"
+              className="rounded-lg shadow-lg w-full"
             />
           </div>
           <div>

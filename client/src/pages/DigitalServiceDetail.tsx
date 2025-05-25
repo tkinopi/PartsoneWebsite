@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { ArrowLeft, CheckCircle2 } from "lucide-react";
+import digitalPlatformImage from "../assets/digital_platform.png";
 
 const DigitalServiceDetail = () => {
   // SEO設定
@@ -105,7 +106,7 @@ const DigitalServiceDetail = () => {
             </div>
             <div className="bg-gradient-to-r from-red-600 to-red-800 rounded-3xl overflow-hidden shadow-xl">
               <img 
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" 
+                src={digitalPlatformImage} 
                 alt="デジタルプラットフォーム事業"
                 className="w-full h-auto object-cover"
               />
