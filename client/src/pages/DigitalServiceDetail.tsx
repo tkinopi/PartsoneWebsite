@@ -6,6 +6,8 @@ import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { ArrowLeft, CheckCircle2 } from "lucide-react";
 import digitalPlatformImage from "../assets/digital_platform.png";
+import carParts1Image from "../assets/car_parts_1.jpg";
+import carParts2Image from "../assets/car_parts_2.jpg";
 
 const DigitalServiceDetail = () => {
   // SEO設定
@@ -25,37 +27,37 @@ const DigitalServiceDetail = () => {
 
   const features = [
     {
-      title: "DXソリューション",
-      description: "デジタル技術を駆使した効率化や事業変革の支援",
+      title: "ワンクリック注文",
+      description: "アプリからのワンクリックでリサイクルパーツを簡単に注文可能",
       icon: CheckCircle2
     },
     {
-      title: "システム開発",
-      description: "ビジネスニーズに合わせたカスタムシステムの開発",
+      title: "在庫即時出品",
+      description: "企業が保有する在庫を簡単に出品でき、直接取引を実現",
       icon: CheckCircle2
     },
     {
-      title: "AIおよび機械学習統合",
-      description: "データ分析と予測モデルによる意思決定支援",
+      title: "環境貢献の可視化",
+      description: "リサイクルパーツ利用によるCO2削減効果を数値で表示",
       icon: CheckCircle2
     },
     {
-      title: "クラウドインフラ構築",
-      description: "スケーラブルで安全なクラウド環境の設計と実装",
+      title: "フラットな開発体制",
+      description: "インターン生から役職者まで垣根なく意見を出し合える環境",
       icon: CheckCircle2
     }
   ];
 
   const caseStudies = [
     {
-      title: "製造業向けIoTプラットフォーム",
-      description: "生産設備からのリアルタイムデータ収集・分析により、製造プロセスを最適化し、生産性が30%向上しました。",
-      image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
+      title: "インターン発案のUzoneプロジェクト",
+      description: "2020年、インターン生の発案からスタートしたUzoneプロジェクト。社内プレゼンをきっかけに、全社的なプロジェクトへと発展し、現在は自動車リサイクル業界の常識を変えるアプリ開発が進行中です。",
+      image: carParts1Image
     },
     {
-      title: "金融機関向け顧客分析プラットフォーム",
-      description: "AIを活用した顧客行動分析により、パーソナライズされたサービス提案を実現し、顧客満足度が25%向上しました。",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+      title: "チーム垣根を超えた開発体制",
+      description: "フロントエンド、バックエンド、データ分析、OCR技術など、各専門チームが垣根を超えて協力。多様な視点からのアイデア創出と技術融合により、業界に革新をもたらすプラットフォームを構築しています。",
+      image: carParts2Image
     }
   ];
 
@@ -192,11 +194,11 @@ const DigitalServiceDetail = () => {
             className="bg-gradient-to-r from-primary/90 to-primary p-12 rounded-3xl shadow-xl"
           >
             <h2 className="text-3xl text-white font-bold mb-6">
-              デジタル化の課題、お気軽にご相談ください
+              産業リサイクルの常識を変える取り組みに参加しませんか
             </h2>
             <p className="text-white/90 mb-8 max-w-xl mx-auto">
-              貴社のビジネス課題に合わせた最適なソリューションをご提案いたします。
-              まずはお問い合わせからご相談ください。
+              自動車リサイクルパーツの流通促進を通じて環境保全に貢献するUzoneプロジェクト。
+              自社アプリ開発に関するご質問やお問い合わせはこちらから。
             </p>
             <Button asChild size="lg" variant="secondary">
               <Link href="/#contact">
