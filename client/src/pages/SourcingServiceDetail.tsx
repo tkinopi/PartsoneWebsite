@@ -25,37 +25,37 @@ const SourcingServiceDetail = () => {
 
   const features = [
     {
-      title: "人材ソーシング",
-      description: "高度なスキルを持つ人材の紹介・派遣サービス",
+      title: "高品質リサイクル部品",
+      description: "厳格な品質基準で選定された信頼性の高い自動車リサイクル部品の提供",
       icon: CheckCircle2
     },
     {
-      title: "業務委託サービス",
-      description: "専門性の高い業務のアウトソーシングソリューション",
+      title: "希少部品調達",
+      description: "廃盤や入手困難な自動車部品の独自ネットワークによる調達サービス",
       icon: CheckCircle2
     },
     {
-      title: "設備・機器のレンタル",
-      description: "オフィス機器からイベント用品まで幅広いレンタルサービス",
+      title: "環境負荷削減",
+      description: "リサイクル部品活用によるCO2排出量削減効果の数値化と可視化",
       icon: CheckCircle2
     },
     {
-      title: "プロジェクト管理支援",
-      description: "目標達成のための効率的なリソース配分と進行管理",
+      title: "部品価値評価",
+      description: "廃車から取り外した部品の価値を最大化する専門的な評価・提案サービス",
       icon: CheckCircle2
     }
   ];
 
   const caseStudies = [
     {
-      title: "大規模イベント向け機材・人材ソーシング",
-      description: "国際会議におけるAV機器の提供と専門オペレーターの派遣により、スムーズなイベント運営を実現しました。",
-      image: "https://images.unsplash.com/photo-1540317580384-e5d43867a338?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+      title: "自動車整備工場チェーン向け部品供給",
+      description: "全国の自動車整備工場チェーンに高品質リサイクル部品を安定供給し、修理コスト30%削減と年間CO2排出量20トン削減を実現しました。",
+      image: sourcingBusinessImage
     },
     {
-      title: "ITプロジェクト向け専門人材ソーシング",
-      description: "システム開発プロジェクトに必要な専門エンジニアを短期間で確保し、プロジェクトの納期遵守に貢献しました。",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+      title: "クラシックカー愛好家向け希少部品調達",
+      description: "生産終了から30年以上経過した希少なクラシックカー部品を独自ネットワークで調達し、貴重な車両の維持と文化的価値の保全に貢献しています。",
+      image: sourcingBusinessImage
     }
   ];
 
@@ -98,7 +98,7 @@ const SourcingServiceDetail = () => {
                 transition={{ duration: 0.5 }}
                 className="text-2xl font-bold mb-6"
               >
-                "最適なリソースで、ビジネスに価値を創出する"
+                "廃棄物から資源へ、価値の再創造"
               </motion.h3>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -106,9 +106,9 @@ const SourcingServiceDetail = () => {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-lg text-gray-700 leading-relaxed mb-8"
               >
-                Partsoneのソーシング事業は、企業のビジネス成長に必要な人材や設備を適切なタイミングで提供します。
-                多様な業界における豊富な経験と幅広いネットワークを活かし、
-                企業ごとの特性やニーズに合わせたオーダーメイドのソリューションを実現しています。
+                Partsoneのソーシング事業は、廃棄される予定の自動車から取り外された部品に新しい価値を見出し、
+                必要としているお客様へつなげる環境配慮型ビジネスです。本来ゴミとなる運命だった部品を再利用することで、
+                資源の有効活用とCO2削減を促進し、持続可能な社会の実現に貢献しています。
               </motion.p>
             </div>
           </div>
