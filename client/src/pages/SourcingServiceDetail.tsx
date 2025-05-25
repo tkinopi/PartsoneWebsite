@@ -6,6 +6,8 @@ import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { ArrowLeft, CheckCircle2 } from "lucide-react";
 import sourcingBusinessImage from "../assets/sourcing_business.jpg";
+import carParts1Image from "../assets/car_parts_1.jpg";
+import carParts2Image from "../assets/car_parts_2.jpg";
 
 const SourcingServiceDetail = () => {
   // SEO設定
@@ -50,12 +52,12 @@ const SourcingServiceDetail = () => {
     {
       title: "自動車整備工場チェーン向け部品供給",
       description: "全国の自動車整備工場チェーンに高品質リサイクル部品を安定供給し、修理コスト30%削減と年間CO2排出量20トン削減を実現しました。",
-      image: sourcingBusinessImage
+      image: carParts1Image
     },
     {
       title: "クラシックカー愛好家向け希少部品調達",
       description: "生産終了から30年以上経過した希少なクラシックカー部品を独自ネットワークで調達し、貴重な車両の維持と文化的価値の保全に貢献しています。",
-      image: sourcingBusinessImage
+      image: carParts2Image
     }
   ];
 
