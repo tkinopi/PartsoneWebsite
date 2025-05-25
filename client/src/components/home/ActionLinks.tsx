@@ -14,10 +14,6 @@ const ActionLinks = () => {
           viewport={{ once: true }}
         >
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-white mb-4">お客様のビジネス成長をサポートするソリューション</h2>
-            <p className="text-lg text-white/80 max-w-3xl mx-auto">
-              Partsoneは、ソーシング事業とデジタルプラットフォーム事業を通じて、お客様のビジネス課題解決と成長戦略をサポートします。
-            </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
@@ -28,7 +24,7 @@ const ActionLinks = () => {
                   <Heart className="w-12 h-12 text-white group-hover:text-primary transition-colors" />
                 </div>
                 <h3 className="text-3xl font-bold text-white mb-2 group-hover:text-primary transition-colors">Careers</h3>
-                <p className="text-white/80">一緒にデザインの力を証明しませんか？</p>
+                <p className="text-white/80">循環型社会の実現に向けて共に歩みませんか？</p>
               </div>
             </Link>
 
