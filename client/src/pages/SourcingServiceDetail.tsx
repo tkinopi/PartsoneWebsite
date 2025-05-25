@@ -17,7 +17,7 @@ const SourcingServiceDetail = () => {
     // Add meta description
     const metaDescription = document.createElement('meta');
     metaDescription.name = 'description';
-    metaDescription.content = 'Partsoneのソーシング事業 - 企業のニーズに合わせた最適な人材や設備のソーシングソリューションを提供します。';
+    metaDescription.content = 'Partsoneのソーシング事業 - 廃棄される予定の自動車部品に新たな命を吹き込み、資源化を通じてサーキュラーエコノミーの実現と地球温暖化防止に貢献します。';
     document.head.appendChild(metaDescription);
     
     return () => {
@@ -51,12 +51,12 @@ const SourcingServiceDetail = () => {
   const caseStudies = [
     {
       title: "自動車整備工場チェーン向け部品供給",
-      description: "全国の自動車整備工場チェーンに高品質リサイクル部品を安定供給し、修理コスト30%削減と年間CO2排出量20トン削減を実現しました。",
+      description: "全国の自動車整備工場チェーンに高品質リサイクル部品を安定供給し、修理コストの削減とCO2排出量削減を実現しました。",
       image: carParts1Image
     },
     {
       title: "クラシックカー愛好家向け希少部品調達",
-      description: "生産終了から30年以上経過した希少なクラシックカー部品を独自ネットワークで調達し、貴重な車両の維持と文化的価値の保全に貢献しています。",
+      description: "生産終了から長期間経過した希少なクラシックカー部品を独自ネットワークで調達し、貴重な車両の維持と文化的価値の保全に貢献しています。",
       image: carParts2Image
     }
   ];
@@ -100,7 +100,7 @@ const SourcingServiceDetail = () => {
                 transition={{ duration: 0.5 }}
                 className="text-2xl font-bold mb-6"
               >
-                "廃棄物から資源へ、価値の再創造"
+                "ソーシング＝資源化、三方よしを超える四方よし"
               </motion.h3>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -108,9 +108,9 @@ const SourcingServiceDetail = () => {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-lg text-gray-700 leading-relaxed mb-8"
               >
-                Partsoneのソーシング事業は、廃棄される予定の自動車から取り外された部品に新しい価値を見出し、
-                必要としているお客様へつなげる環境配慮型ビジネスです。本来ゴミとなる運命だった部品を再利用することで、
-                資源の有効活用とCO2削減を促進し、持続可能な社会の実現に貢献しています。
+                Partsoneのソーシング事業は、地球温暖化を止め、サーキュラーエコノミーを実現するための取り組みです。
+                本来ゴミになるはずだった自動車部品に新たな命を吹き込み、必要としているお客様へつなげることで、
+                売り手、買い手、会社、そして環境にも喜ばれる「四方よし」のビジネスモデルを実現しています。
               </motion.p>
             </div>
           </div>
@@ -124,7 +124,7 @@ const SourcingServiceDetail = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl font-bold mb-12 text-center">主なサービス</h2>
+            <h2 className="text-3xl font-bold mb-12 text-center">リサイクル部品価値創造サービス</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {features.map((feature, index) => (
                 <motion.div
@@ -156,7 +156,7 @@ const SourcingServiceDetail = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl font-bold mb-12 text-center">導入事例</h2>
+            <h2 className="text-3xl font-bold mb-12 text-center">資源化の成功事例</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               {caseStudies.map((caseStudy, index) => (
                 <motion.div
@@ -194,11 +194,11 @@ const SourcingServiceDetail = () => {
             className="bg-gradient-to-r from-primary/90 to-primary p-12 rounded-3xl shadow-xl"
           >
             <h2 className="text-3xl text-white font-bold mb-6">
-              リソース調達の課題、お気軽にご相談ください
+              サーキュラーエコノミー実現に向けて、共に歩みましょう
             </h2>
             <p className="text-white/90 mb-8 max-w-xl mx-auto">
-              貴社の業務ニーズに合わせた最適なリソースソリューションをご提案いたします。
-              まずはお問い合わせからご相談ください。
+              廃棄予定の自動車部品の資源化について、お気軽にご相談ください。
+              環境貢献とコスト削減を両立する四方よしのビジネスモデルをご提案いたします。
             </p>
             <Button asChild size="lg" variant="secondary">
               <Link href="/#contact">
