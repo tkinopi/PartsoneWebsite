@@ -36,10 +36,10 @@ const Hero = () => {
           className="max-w-3xl"
         >
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
-            総合レンタル会社 <span className="text-primary">Partsone</span>
+            部品を再生し、産業を刷新する。<span className="text-primary">Partsone</span>
           </h1>
           <p className="text-xl text-white mb-8">
-            最先端技術とサービスで、お客様のビジネスをサポートします。
+            自動車アフターパーツの流通をデジタルで最適化し、リサイクルの常識を変革。
           </p>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
             <Button 
