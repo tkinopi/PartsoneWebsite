@@ -20,7 +20,7 @@ const Services = () => {
       <Container>
         <SectionTitle 
           title="事業内容" 
-          subtitle="Partsoneはソーシング事業とデジタルプラットフォーム事業を通じて、お客様のビジネスニーズに合わせたソリューションをご用意しています。" 
+          subtitle="" 
         />
         
         <motion.div 

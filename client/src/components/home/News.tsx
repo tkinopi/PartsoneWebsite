@@ -27,7 +27,7 @@ const News = () => {
       <Container>
         <SectionTitle 
           title="News" 
-          subtitle="Partsoneの最新情報をお届けします" 
+          subtitle="" 
         />
         
         <motion.div
