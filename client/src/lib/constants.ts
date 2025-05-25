@@ -1,11 +1,12 @@
 import digitalPlatformImage from "../assets/digital_platform.png";
+import sourcingBusinessImage from "../assets/sourcing_business.jpg";
 
 // Services data
 export const servicesData = [
   {
     title: "ソーシング事業",
     description: "企業が必要とする優秀な人材を効率的に発掘し、最適なマッチングを実現します。国内外のプロフェッショナル人材ネットワークを活用し、企業の成長をサポートします。",
-    imageSrc: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+    imageSrc: sourcingBusinessImage,
     detailUrl: "/services/sourcing"
   },
   {

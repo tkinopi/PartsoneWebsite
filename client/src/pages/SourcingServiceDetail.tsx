@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { ArrowLeft, CheckCircle2 } from "lucide-react";
+import sourcingBusinessImage from "../assets/sourcing_business.jpg";
 
 const SourcingServiceDetail = () => {
   // SEO設定

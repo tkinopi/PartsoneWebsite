@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { useLocation } from "wouter";
 import { useEffect } from "react";
+import sourcingBusinessImage from "../assets/sourcing_business.jpg";
 
 const SourcingBusiness = () => {
   const [_, setLocation] = useLocation();
@@ -44,9 +45,9 @@ const SourcingBusiness = () => {
         <div className="grid md:grid-cols-2 gap-12 mt-12 items-center">
           <div>
             <img 
-              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+              src={sourcingBusinessImage} 
               alt="ソーシング事業" 
-              className="rounded-lg shadow-lg"
+              className="rounded-lg shadow-lg w-full"
             />
           </div>
           <div>
