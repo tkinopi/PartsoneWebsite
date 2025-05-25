@@ -6,8 +6,8 @@ import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { ArrowLeft, CheckCircle2 } from "lucide-react";
 import digitalPlatformImage from "../assets/digital_platform.png";
-import carParts1Image from "../assets/car_parts_1.jpg";
-import carParts2Image from "../assets/car_parts_2.jpg";
+import developerImage from "../assets/developer.jpg";
+import teamImage from "../assets/team.jpg";
 
 const DigitalServiceDetail = () => {
   // SEO設定
@@ -52,12 +52,12 @@ const DigitalServiceDetail = () => {
     {
       title: "インターン発案のUzoneプロジェクト",
       description: "2020年、インターン生の発案からスタートしたUzoneプロジェクト。社内プレゼンをきっかけに、全社的なプロジェクトへと発展し、現在は自動車リサイクル業界の常識を変えるアプリ開発が進行中です。",
-      image: carParts1Image
+      image: developerImage
     },
     {
       title: "チーム垣根を超えた開発体制",
       description: "フロントエンド、バックエンド、データ分析、OCR技術など、各専門チームが垣根を超えて協力。多様な視点からのアイデア創出と技術融合により、業界に革新をもたらすプラットフォームを構築しています。",
-      image: carParts2Image
+      image: teamImage
     }
   ];
 
