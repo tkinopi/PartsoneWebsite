@@ -20,30 +20,27 @@ const VisionSection = () => {
         </div>
         
         <div className="bg-muted p-8 rounded-lg">
-          <h4 className="text-2xl font-bold mb-6 text-center">2030年に向けたビジョン</h4>
+          <h4 className="text-2xl font-bold mb-6 text-center">中長期ロードマップ</h4>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h5 className="text-xl font-semibold mb-4 text-primary">テクノロジー主導の循環革新</h5>
+              <h5 className="text-xl font-semibold mb-4 text-primary">データ駆動リサイクル標準化</h5>
               <p className="text-muted-foreground">
-                AIとブロックチェーンで部品の<br />
-                ライフサイクルを完全トレーサブル化。<br />
-                廃棄ゼロへ向けた新しい基準を確立します。
+                部品履歴・需要をリアルタイムで共有し、<br />
+                安価に「買う／売る」を両立する循環市場を完成させる。
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h5 className="text-xl font-semibold mb-4 text-primary">グローバル循環ネットワークの確立</h5>
+              <h5 className="text-xl font-semibold mb-4 text-primary">循環同盟グローバル拡大</h5>
               <p className="text-muted-foreground">
-                50か国・2万社とつながる<br />
-                "循環アライアンス"を構築。<br />
-                国境を超えて資源と知見を共有します。
+                国内からアジア・欧州へネットワークを拡大し、<br />
+                資源・知見を越境で循環させる国際エコシステムを構築。
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h5 className="text-xl font-semibold mb-4 text-primary">カーボンネガティブの実現</h5>
+              <h5 className="text-xl font-semibold mb-4 text-primary">若手発DXで業界を再起動</h5>
               <p className="text-muted-foreground">
-                自社オペレーションを2030年までに<br />
-                "排出マイナス"へ転換。<br />
-                ビジネスで地球温暖化に挑みます。
+                既存プロセスを自動化・可視化し、<br />
+                現場が革新を生む組織文化でリユースの未来を牽引。
               </p>
             </div>
           </div>
