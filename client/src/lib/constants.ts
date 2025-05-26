@@ -20,10 +20,10 @@ export const servicesData = [
 // Team members data
 export const teamMembersData = [
   {
-    name: "佐藤 健太",
+    name: "長倉 達也",
     position: "代表取締役",
-    description: "15年以上のIT業界経験を持ち、Partsoneを設立。ビジョンと戦略を率いています。",
-    imageSrc: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400",
+    description: "静脈産業の可能性を見据え、循環型社会の実現に向けてリサイクル産業を新しい産業として確立。日本の「もったいない」文化を世界に発信し、限られた資源を再利用する革新的なビジネスモデルを構築しています。",
+    imageSrc: "@assets/スクリーンショット 2025-05-26 18.31.23.png",
   },
   {
     name: "山田 明美",
