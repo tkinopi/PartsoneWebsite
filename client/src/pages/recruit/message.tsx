@@ -1,6 +1,6 @@
 import { SectionTitle } from "@/components/ui/section-title";
 import RecruitPageLayout from "@/components/recruit/RecruitPageLayout";
-import ceoImagePath from "@assets/IMG_8943 (1).jpg";
+import ceoImagePath from "@assets/スクリーンショット 2025-05-26 19.26.45.png";
 
 export default function MessagePage() {
   return (
