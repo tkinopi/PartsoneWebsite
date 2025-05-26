@@ -1,6 +1,7 @@
 import digitalPlatformImage from "../assets/digital_platform.png";
 import sourcingBusinessImage from "../assets/sourcing_business.jpg";
 import nagakuraImage from "@assets/スクリーンショット 2025-05-26 18.36.18.png";
+import yoshimuraImage from "@assets/スクリーンショット 2025-05-26 18.41.53.png";
 
 // Services data
 export const servicesData = [
@@ -27,10 +28,10 @@ export const teamMembersData = [
     imageSrc: nagakuraImage,
   },
   {
-    name: "山田 明美",
-    position: "営業部長",
-    description: "顧客関係の構築と維持に優れ、営業チームを成功に導いています。",
-    imageSrc: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400",
+    name: "吉村 遼馬",
+    position: "BizDev",
+    description: "1998年生まれ、東京都出身。東京外国語大学卒業後、2021年新卒でパーツワンに入社。ソーシング事業部の営業、経理業務、後輩育成を担当するエース社員。一発で人と仲良くなる明るい人柄で、4人兄弟の長男らしく面倒見が良い。趣味は海外旅行。",
+    imageSrc: yoshimuraImage,
   },
   {
     name: "田中 誠",
