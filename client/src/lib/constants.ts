@@ -4,6 +4,8 @@ import nagakuraImage from "@assets/スクリーンショット 2025-05-26 18.36.
 import yoshimuraImage from "@assets/スクリーンショット 2025-05-26 18.41.53.png";
 import yamadaImage from "@assets/スクリーンショット 2025-05-26 18.45.29.png";
 import hatakeyamaImage from "@assets/スクリーンショット 2025-05-26 18.50.56.png";
+import kuboImage from "@assets/IMG_8943 (1).jpg";
+import fujisawaImage from "@assets/スクリーンショット 2025-05-26 19.01.43.png";
 
 // Services data
 export const servicesData = [
@@ -46,6 +48,18 @@ export const teamMembersData = [
     position: "BizDev",
     description: "2001年青森生まれ、東京育ち。2025年3月千葉大学卒業予定の内定者。自動車業界未経験ながら持ち前の吸収力で営業をこなし、簿記二級を活かして経理業務も担当。ニコニコ笑顔の裏に責任感と野望のある熱い男。理想の経営者像を描き日々精進する努力家。趣味は草野球。",
     imageSrc: hatakeyamaImage,
+  },
+  {
+    name: "久保 実央",
+    position: "BizDev",
+    description: "1999年生まれ、群馬県出身。東京理科大学を卒業し、日系コンサルファームを経て、2024年にパーツワンに入社。BizDev職として主に自社アプリの販促を担当。未知の問題にも怯むことなく挑む真のチャレンジャー。最新の情報もくまなく取り込むキャッチアップ上手。動物をこよなく愛する心優しいお姉さん。",
+    imageSrc: kuboImage,
+  },
+  {
+    name: "藤澤 善寛",
+    position: "BizDev",
+    description: "1982年生まれ、千葉県出身。自動車整備会社・リースメンテナンス会社・情報掲示板サイト会社などを経て、2022年パーツワンに入社。自動車業界での経験や海外での事業立ち上げ経験、マネジメント経験を持つ。現在は自社アプリの販促とコールスタッフのマネジメント業務を担当。趣味は国内外への一人旅。",
+    imageSrc: fujisawaImage,
   },
 ];
 
