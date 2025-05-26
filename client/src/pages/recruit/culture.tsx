@@ -61,11 +61,7 @@ export default function CulturePage() {
             <span className="text-muted-foreground">株式会社パーツワン</span>
           </p>
 
-          <h3 className="text-2xl font-bold mt-8 mb-4">まとめ</h3>
-          <div className="bg-muted p-6 rounded-lg">
-            <p className="mb-4">挑戦・協力・顧客志向・学習の4軸で、循環型社会を牽引するカルチャーを構築</p>
-            <p>柔軟なワークスタイルと独自の成長支援で、メンバーの可能性を最大化</p>
-          </div>
+
         </div>
       </div>
     </RecruitPageLayout>
