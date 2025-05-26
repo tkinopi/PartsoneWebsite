@@ -104,9 +104,6 @@ const TeamSection = () => {
               <p className="text-muted-foreground">
                 {activeMember.description}
               </p>
-              <p className="text-muted-foreground">
-                新しい技術とビジネスのトレンドに常にアンテナを張り、お客様のビジネス課題解決に最適なソリューションを提案しています。これまでの経験を活かし、チーム全体の技術力向上にも尽力しています。
-              </p>
             </div>
             <div className="mt-6 flex space-x-4">
               <a href="#" className="text-primary hover:text-primary/80">
