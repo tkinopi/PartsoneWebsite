@@ -3,6 +3,7 @@ import sourcingBusinessImage from "../assets/sourcing_business.jpg";
 import nagakuraImage from "@assets/スクリーンショット 2025-05-26 18.36.18.png";
 import yoshimuraImage from "@assets/スクリーンショット 2025-05-26 18.41.53.png";
 import yamadaImage from "@assets/スクリーンショット 2025-05-26 18.45.29.png";
+import hatakeyamaImage from "@assets/スクリーンショット 2025-05-26 18.50.56.png";
 
 // Services data
 export const servicesData = [
@@ -41,10 +42,10 @@ export const teamMembersData = [
     imageSrc: yamadaImage,
   },
   {
-    name: "鈴木 香織",
-    position: "カスタマーサポート部長",
-    description: "顧客満足度向上に情熱を持ち、サポートチームを率いています。",
-    imageSrc: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400",
+    name: "畠山 翔太",
+    position: "BizDev",
+    description: "2001年青森生まれ、東京育ち。2025年3月千葉大学卒業予定の内定者。自動車業界未経験ながら持ち前の吸収力で営業をこなし、簿記二級を活かして経理業務も担当。ニコニコ笑顔の裏に責任感と野望のある熱い男。理想の経営者像を描き日々精進する努力家。趣味は草野球。",
+    imageSrc: hatakeyamaImage,
   },
 ];
 
