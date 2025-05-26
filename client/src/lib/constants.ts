@@ -2,6 +2,7 @@ import digitalPlatformImage from "../assets/digital_platform.png";
 import sourcingBusinessImage from "../assets/sourcing_business.jpg";
 import nagakuraImage from "@assets/スクリーンショット 2025-05-26 18.36.18.png";
 import yoshimuraImage from "@assets/スクリーンショット 2025-05-26 18.41.53.png";
+import yamadaImage from "@assets/スクリーンショット 2025-05-26 18.45.29.png";
 
 // Services data
 export const servicesData = [
@@ -34,10 +35,10 @@ export const teamMembersData = [
     imageSrc: yoshimuraImage,
   },
   {
-    name: "田中 誠",
-    position: "技術部長",
-    description: "最新技術のトレンドを把握し、革新的なソリューションを開発しています。",
-    imageSrc: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400",
+    name: "山田 沙季",
+    position: "CRM(カスタマーリレーションシップマネジメント)",
+    description: "埼玉大学教養学部卒業後、株式会社パーツワンに入社。新規顧客獲得と既存顧客満足度向上を図るCRM部門を担当。包み込む優しさと確固たる芯を兼ね備えた北海道ガール。根っからの明るさと貫いていく強さで我が道を歩む小さな哲学者。趣味は美味しいものを食べること。",
+    imageSrc: yamadaImage,
   },
   {
     name: "鈴木 香織",
