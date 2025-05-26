@@ -2,17 +2,20 @@ import { SectionTitle } from "@/components/ui/section-title";
 
 const OverviewSection = () => {
   const companyDetails = [
-    { label: "会社名", value: "株式会社パーツワン" },
-    { label: "設立", value: "2007年4月" },
-    { label: "代表取締役", value: "佐藤 健太" },
-    { label: "資本金", value: "1億円" },
-    { label: "従業員数", value: "65名（2023年4月現在）" },
-    { label: "事業内容", value: "ソーシング事業、デジタルプラットフォーム事業" },
-    { label: "本社所在地", value: "〒100-0001 東京都千代田区丸の内1-1-1 パーツワンビル8F" },
-    { label: "TEL", value: "03-1234-5678" },
-    { label: "FAX", value: "03-1234-5679" },
-    { label: "URL", value: "https://www.partsone.co.jp" },
-    { label: "取引銀行", value: "みずほ銀行、三菱UFJ銀行、三井住友銀行" },
+    { label: "社名", value: "株式会社パーツワン" },
+    { label: "所在地", value: "〒150-0033 東京都渋谷区猿楽町3-3 imas Shibuya 2F" },
+    { label: "連絡先", value: "TEL.03-3463-2065 / FAX.03-3463-3782" },
+    { label: "代表者名", value: "長倉 達也" },
+    { label: "設立日", value: "2009年11月17日" },
+    { 
+      label: "事業内容", 
+      value: (
+        <ul>
+          <li>・自動車のリサイクル部品・リビルト部品の卸売</li>
+          <li>・リビルト部品の企画</li>
+        </ul>
+      )
+    },
   ];
 
   return (
