@@ -7,45 +7,65 @@ export default function CulturePage() {
       <div className="space-y-8">
         <SectionTitle 
           title="企業文化" 
-          subtitle="Partsoneの価値観を形作る文化" 
+          subtitle="Parts One の価値観を形づくる文化" 
         />
         
         <div className="prose prose-lg max-w-none">
-          <p>
-            Partsoneでは、イノベーションと協力を重視する文化を育んでいます。私たちは、多様な背景と専門知識を持つチームメンバーが集まり、互いに学び合い、成長する環境を大切にしています。
+          <p className="text-lg leading-relaxed mb-8">
+            Parts One は「勇気とアイディアで新たな価値観を創造する」という理念のもと、<br />
+            愛情・個性・プロ意識の3つを核にしたカルチャーを育んでいます。<br />
+            多様なバックグラウンドを持つメンバーが互いを尊重し、学び合いながら<br />
+            循環型ビジネスを前進させる——それが私たちの企業文化です。<br />
+            <span className="text-muted-foreground">株式会社パーツワン</span>
           </p>
 
           <h3 className="text-2xl font-bold mt-8 mb-4">私たちの価値観</h3>
           
           <div className="grid md:grid-cols-2 gap-6 my-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h4 className="text-xl font-bold text-primary mb-2">チャレンジ精神</h4>
-              <p>新しいアイデアを恐れずに試し、失敗から学ぶことを奨励しています。常に変化する環境に適応し、革新的なソリューションを探求することが私たちの強みです。</p>
+              <h4 className="text-xl font-bold text-primary mb-3">チャレンジ精神</h4>
+              <p className="text-sm text-muted-foreground mb-2">新しいアイデアを恐れず試し、失敗から学ぶ。</p>
+              <p className="text-sm">個性×個性の化学反応を歓迎し、革新的ソリューションを探求します。<br />
+              <span className="text-muted-foreground">株式会社パーツワン</span></p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h4 className="text-xl font-bold text-primary mb-2">協力と信頼</h4>
-              <p>チームワークを重視し、お互いを尊重し合う環境を築いています。多様な視点を受け入れ、共に成長することでより良い結果を生み出します。</p>
+              <h4 className="text-xl font-bold text-primary mb-3">協力と信頼</h4>
+              <p className="text-sm text-muted-foreground mb-2">相手の当事者となり、共に答えを探す。</p>
+              <p className="text-sm">1on1やプロジェクトを通じて心から向き合い、長期的な信頼関係を築きます。<br />
+              <span className="text-muted-foreground">株式会社パーツワン</span></p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h4 className="text-xl font-bold text-primary mb-2">顧客中心主義</h4>
-              <p>お客様のニーズを深く理解し、最適なソリューションを提供することにこだわります。私たちの成功はお客様の成功にかかっています。</p>
+              <h4 className="text-xl font-bold text-primary mb-3">顧客中心主義</h4>
+              <p className="text-sm text-muted-foreground mb-2">本質的課題を言語化し、解決するパートナー。</p>
+              <p className="text-sm">"誰の・どの過程の・どの課題"を解くかを起点に、深い価値提供を行います。<br />
+              <span className="text-muted-foreground">株式会社パーツワン</span></p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h4 className="text-xl font-bold text-primary mb-2">継続的学習</h4>
-              <p>技術の急速な進化に対応するため、常に新しい知識とスキルを身につけることを重視しています。社員一人ひとりの成長をサポートします。</p>
+              <h4 className="text-xl font-bold text-primary mb-3">継続的学習</h4>
+              <p className="text-sm text-muted-foreground mb-2">絶えず学び、ベストを尽くす。</p>
+              <p className="text-sm">毎朝の1分間スピーチや事業提案プレゼンで知識を共有し合い、成長を加速します。<br />
+              <span className="text-muted-foreground">株式会社パーツワン</span></p>
             </div>
           </div>
 
           <h3 className="text-2xl font-bold mt-8 mb-4">働き方</h3>
-          <p>
-            Partsoneでは、柔軟な働き方を推進しています。リモートワークとオフィスワークを組み合わせたハイブリッドな環境で、それぞれのライフスタイルに合わせた働き方を選択できます。
+          <p className="text-lg leading-relaxed mb-6">
+            Parts One では、リモート×オフィスのハイブリッドを基本に、<br />
+            メンバーのライフスタイルやプロジェクト特性に合わせた柔軟な働き方を推進。<br />
+            定期的なチームビルディングイベントやスキルアップ研修を通じて<br />
+            「仕事をする場」だけでなく「キャリアを共に創る場」を提供しています。<br />
+            1on1ミーティングやアクションプラン制度が、個々の挑戦を後押しします。<br />
+            <span className="text-muted-foreground">株式会社パーツワン</span>
           </p>
-          <p>
-            また、定期的なチームビルディングイベントやスキルアップのための研修プログラムなど、社員の成長とチームの結束を強化するための取り組みを行っています。Partsoneでは、単に仕事をするだけでなく、キャリアを構築し、共に成長していく仲間を見つけることができます。
-          </p>
+
+          <h3 className="text-2xl font-bold mt-8 mb-4">まとめ</h3>
+          <div className="bg-muted p-6 rounded-lg">
+            <p className="mb-4">挑戦・協力・顧客志向・学習の4軸で、循環型社会を牽引するカルチャーを構築</p>
+            <p>柔軟なワークスタイルと独自の成長支援で、メンバーの可能性を最大化</p>
+          </div>
         </div>
       </div>
     </RecruitPageLayout>
