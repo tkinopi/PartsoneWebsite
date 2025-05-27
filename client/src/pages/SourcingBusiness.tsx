@@ -122,13 +122,7 @@ const SourcingBusiness = () => {
           <Button 
             className="bg-primary hover:bg-primary/90 text-white"
             size="lg"
-            onClick={() => {
-              window.scrollTo({
-                top: document.getElementById("contact")?.offsetTop || 0,
-                behavior: "smooth"
-              });
-              setLocation("/");
-            }}
+            onClick={() => setLocation("/contact")}
           >
             お問い合わせはこちら
           </Button>
