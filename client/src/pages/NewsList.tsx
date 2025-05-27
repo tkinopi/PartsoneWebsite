@@ -94,7 +94,7 @@ export default function NewsList() {
                             <div className="md:flex-1">
                               <div className="flex flex-col sm:flex-row gap-2 sm:items-center mb-2">
                                 <span className="text-sm text-muted-foreground font-medium">
-                                  {formatDate(article.publishedAt.toString().split('T')[0])}
+                                  {formatDate(article.publishedAt)}
                                 </span>
                               </div>
                               <h3 className="text-xl font-bold group-hover:text-primary transition-colors">
