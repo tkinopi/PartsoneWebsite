@@ -9,6 +9,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import { apiRequest } from "@/lib/queryClient";
+import { sendApplicationEmail } from "@/lib/mailto";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
@@ -64,19 +65,59 @@ export default function ApplyPage() {
       coverLetterFile: "",
       portfolioUrl: "",
       referralSource: "",
-      privacyPolicy: false,
+      privacyPolicy: true,
     },
   });
 
   async function onSubmit(data: ApplicationValues) {
     setIsSubmitting(true);
     try {
-      // API リクエストをシミュレート
-      // 実際のプロジェクトでは apiRequest を使用して応募データを送信します
-      // await apiRequest("/api/applications", {
-      //   method: "POST",
-      //   body: JSON.stringify(data),
-      // });
+      // 応募データをメール形式でまとめる
+      const applicationData = {
+        name: `${data.lastName} ${data.firstName}`,
+        email: data.email,
+        phone: data.phone,
+        position: data.position,
+        message: `
+【応募情報】
+ポジション: ${data.position}
+雇用形態: ${data.employmentType}
+
+【個人情報】
+氏名: ${data.lastName} ${data.firstName}
+メールアドレス: ${data.email}
+電話番号: ${data.phone}
+住所: ${data.address}
+
+【学歴・職歴】
+最終学歴: ${data.education}
+現在の会社: ${data.currentCompany || '未記入'}
+
+【職務経験】
+${data.experience}
+
+【スキルセット】
+${data.skills}
+
+【志望動機】
+${data.motivation}
+
+【ポートフォリオURL】
+${data.portfolioUrl || '未記入'}
+
+【履歴書】
+${data.resumeFile || '未添付'}
+
+【職務経歴書】
+${data.coverLetterFile || '未添付'}
+
+【応募のきっかけ】
+${data.referralSource || '未選択'}
+        `
+      };
+
+      // メールクライアントを開いて応募内容を送信
+      sendApplicationEmail(applicationData);
       
       // 送信成功をシミュレート
       await new Promise(resolve => setTimeout(resolve, 1500));
