@@ -10,7 +10,7 @@ export default function NewsDetail() {
   const { id } = useParams<{ id: string }>();
   
   const { data: newsItem, isLoading } = useQuery<NewsArticle>({
-    queryKey: ["/api/news", id],
+    queryKey: [`/api/news/${id}`],
     enabled: !!id,
   });
   
