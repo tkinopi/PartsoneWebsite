@@ -71,7 +71,7 @@ const News = () => {
                   <div className="md:w-3/4">
                     <div className="flex flex-col sm:flex-row gap-2 sm:items-center mb-2">
                       <span className="text-sm text-muted-foreground font-medium">
-                        {formatDate(new Date(article.publishedAt).toISOString().split('T')[0])}
+                        {formatDate(article.publishedAt)}
                       </span>
                       <span className="inline-block px-2 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary">
                         {article.category}

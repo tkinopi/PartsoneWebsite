@@ -85,8 +85,8 @@ export default function NewsDetail() {
               <span className="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">
                 {newsItem.category}
               </span>
-              <time className="text-muted-foreground" dateTime={new Date(newsItem.publishedAt).toISOString()}>
-                {formatDate(new Date(newsItem.publishedAt).toISOString().split('T')[0])}
+              <time className="text-muted-foreground" dateTime={newsItem.publishedAt?.toString() || ''}>
+                {formatDate(newsItem.publishedAt || new Date())}
               </time>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-6">{newsItem.title}</h1>
@@ -124,8 +124,8 @@ export default function NewsDetail() {
                         />
                       </div>
                     )}
-                    <time className="text-sm text-muted-foreground" dateTime={new Date(article.publishedAt).toISOString()}>
-                      {formatDate(new Date(article.publishedAt).toISOString().split('T')[0])}
+                    <time className="text-sm text-muted-foreground" dateTime={article.publishedAt.toString()}>
+                      {formatDate(article.publishedAt)}
                     </time>
                     <h3 className="font-bold text-lg mt-2 group-hover:text-primary transition-colors">
                       {article.title}
