@@ -60,3 +60,23 @@ export const insertNewsArticleSchema = createInsertSchema(newsArticles).omit({
 
 export type InsertNewsArticle = z.infer<typeof insertNewsArticleSchema>;
 export type NewsArticle = typeof newsArticles.$inferSelect;
+
+// Job applications
+export const jobApplications = pgTable("job_applications", {
+  id: serial("id").primaryKey(),
+  name: text("name").notNull(),
+  email: text("email").notNull(),
+  phone: text("phone"),
+  position: text("position").notNull(),
+  message: text("message").notNull(),
+  resumeUrl: text("resume_url"),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+});
+
+export const insertJobApplicationSchema = createInsertSchema(jobApplications).omit({
+  id: true,
+  createdAt: true,
+});
+
+export type InsertJobApplication = z.infer<typeof insertJobApplicationSchema>;
+export type JobApplication = typeof jobApplications.$inferSelect;

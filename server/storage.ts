@@ -29,6 +29,11 @@ export interface IStorage {
   getNewsArticle(id: number): Promise<NewsArticle | undefined>;
   updateNewsArticle(id: number, article: Partial<InsertNewsArticle>): Promise<NewsArticle | undefined>;
   deleteNewsArticle(id: number): Promise<boolean>;
+  
+  // Job application methods
+  createJobApplication(application: InsertJobApplication): Promise<JobApplication>;
+  getJobApplications(): Promise<JobApplication[]>;
+  getJobApplication(id: number): Promise<JobApplication | undefined>;
 }
 
 export class MemStorage implements IStorage {
