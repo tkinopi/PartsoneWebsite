@@ -201,7 +201,7 @@ const DigitalServiceDetail = () => {
               自社アプリ開発に関するご質問やお問い合わせはこちらから。
             </p>
             <Button asChild size="lg" variant="secondary">
-              <Link href="/#contact">
+              <Link href="/contact">
                 お問い合わせ
               </Link>
             </Button>

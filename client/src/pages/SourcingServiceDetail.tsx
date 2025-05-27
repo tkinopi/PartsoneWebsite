@@ -201,7 +201,7 @@ const SourcingServiceDetail = () => {
               環境貢献とコスト削減を両立する四方よしのビジネスモデルをご提案いたします。
             </p>
             <Button asChild size="lg" variant="secondary">
-              <Link href="/#contact">
+              <Link href="/contact">
                 お問い合わせ
               </Link>
             </Button>
