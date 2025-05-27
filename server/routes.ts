@@ -36,6 +36,36 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // News articles endpoints
+  app.get("/api/news", async (req: Request, res: Response) => {
+    try {
+      const articles = await storage.getPublishedNewsArticles();
+      res.json(articles);
+    } catch (error) {
+      console.error("Failed to fetch news articles:", error);
+      res.status(500).json({ message: "ニュース記事の取得に失敗しました。" });
+    }
+  });
+
+  app.get("/api/news/:id", async (req: Request, res: Response) => {
+    try {
+      const id = parseInt(req.params.id);
+      if (isNaN(id)) {
+        return res.status(400).json({ message: "無効な記事IDです。" });
+      }
+
+      const article = await storage.getNewsArticle(id);
+      if (!article) {
+        return res.status(404).json({ message: "記事が見つかりません。" });
+      }
+
+      res.json(article);
+    } catch (error) {
+      console.error("Failed to fetch news article:", error);
+      res.status(500).json({ message: "ニュース記事の取得に失敗しました。" });
+    }
+  });
+
   const httpServer = createServer(app);
   return httpServer;
 }

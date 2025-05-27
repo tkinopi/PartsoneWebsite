@@ -1,12 +1,17 @@
 import { Container } from "@/components/ui/container";
 import { SectionTitle } from "@/components/ui/section-title";
-import { newsData } from "@/lib/constants";
 import { formatDate } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { ChevronLeft } from "lucide-react";
+import { useQuery } from "@tanstack/react-query";
+import type { NewsArticle } from "@shared/schema";
 
 export default function NewsList() {
+  const { data: newsArticles, isLoading } = useQuery<NewsArticle[]>({
+    queryKey: ["/api/news"],
+  });
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -23,7 +28,28 @@ export default function NewsList() {
   };
 
   // カテゴリー別にニュースを分類
-  const categories = [...new Set(newsData.map(news => news.category))];
+  const categories = Array.from(new Set(newsArticles?.map(article => article.category) || []));
+  
+  if (isLoading) {
+    return (
+      <div className="pt-24 pb-16">
+        <Container>
+          <div className="max-w-5xl mx-auto">
+            <SectionTitle title="ニュース一覧" subtitle="読み込み中..." />
+            <div className="mt-12 space-y-6">
+              {[1, 2, 3].map((i) => (
+                <div key={i} className="bg-muted p-6 rounded-lg animate-pulse">
+                  <div className="h-4 bg-gray-300 rounded w-1/4 mb-2"></div>
+                  <div className="h-6 bg-gray-300 rounded w-3/4 mb-2"></div>
+                  <div className="h-4 bg-gray-300 rounded w-full"></div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </Container>
+      </div>
+    );
+  }
   
   return (
     <div className="pt-24 pb-16">
@@ -56,10 +82,10 @@ export default function NewsList() {
                   variants={containerVariants}
                   className="space-y-6"
                 >
-                  {newsData
-                    .filter(news => news.category === category)
-                    .map(news => (
-                      <Link key={news.id} href={`/news/${news.id}`}>
+                  {newsArticles
+                    ?.filter(article => article.category === category)
+                    .map(article => (
+                      <Link key={article.id} href={`/news/${article.id}`}>
                         <motion.div 
                           className="bg-muted hover:bg-slate-50 p-6 rounded-lg transition-all group cursor-pointer"
                           variants={itemVariants}
@@ -68,21 +94,21 @@ export default function NewsList() {
                             <div className="md:flex-1">
                               <div className="flex flex-col sm:flex-row gap-2 sm:items-center mb-2">
                                 <span className="text-sm text-muted-foreground font-medium">
-                                  {formatDate(news.date)}
+                                  {formatDate(new Date(article.publishedAt).toISOString().split('T')[0])}
                                 </span>
                               </div>
                               <h3 className="text-xl font-bold group-hover:text-primary transition-colors">
-                                {news.title}
+                                {article.title}
                               </h3>
                               <p className="mt-2 text-muted-foreground line-clamp-2">
-                                {news.summary}
+                                {article.excerpt}
                               </p>
                             </div>
-                            {news.imageSrc && (
+                            {article.imageUrl && (
                               <div className="md:w-1/4 overflow-hidden rounded-lg">
                                 <img 
-                                  src={news.imageSrc} 
-                                  alt={news.title} 
+                                  src={article.imageUrl} 
+                                  alt={article.title} 
                                   className="w-full aspect-video object-cover transition-transform group-hover:scale-105 duration-300"
                                   loading="lazy" 
                                 />
