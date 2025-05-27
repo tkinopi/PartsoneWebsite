@@ -105,7 +105,9 @@ export default function NewsDetail() {
           
           {/* 記事本文 */}
           <div className="prose prose-lg max-w-none mb-16">
-            <div dangerouslySetInnerHTML={{ __html: newsItem.content }} />
+            <p className="text-lg leading-relaxed whitespace-pre-line">
+              {newsItem.content}
+            </p>
           </div>
           
           {/* 関連記事 */}
