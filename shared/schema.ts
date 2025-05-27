@@ -45,6 +45,7 @@ export const newsArticles = pgTable("news_articles", {
   excerpt: text("excerpt").notNull(),
   category: text("category").notNull(),
   imageUrl: text("image_url"),
+  contentImages: text("content_images").array(), // 記事内に挿入する画像のURL配列
   published: boolean("published").default(true).notNull(),
   publishedAt: timestamp("published_at").defaultNow().notNull(),
   createdAt: timestamp("created_at").defaultNow().notNull(),

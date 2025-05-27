@@ -105,6 +105,7 @@ export class MemStorage implements IStorage {
     const article: NewsArticle = {
       ...insertArticle,
       imageUrl: insertArticle.imageUrl || null,
+      contentImages: insertArticle.contentImages ?? null,
       id,
       createdAt: now,
       updatedAt: now,
@@ -163,10 +164,15 @@ export class MemStorage implements IStorage {
       },
       {
         title: "Uzoneアプリ正式リリースのお知らせ",
-        content: "当社が開発したリサイクル自動車部品流通プラットフォーム「Uzone」が正式にリリースされました。部品業者様と修理工場様を効率的に結ぶデジタルプラットフォームとして、業界の DX 推進に貢献してまいります。このアプリは、インターンシップ期間中に生まれたアイデアから誕生したもので、現場のニーズを深く理解した実用的な機能を搭載しています。リアルタイムでの在庫確認、品質情報の詳細表示、簡単な発注システムなど、日々の業務を効率化する機能が満載です。",
+        content: "当社が開発したリサイクル自動車部品流通プラットフォーム「Uzone」が正式にリリースされました。部品業者様と修理工場様を効率的に結ぶデジタルプラットフォームとして、業界の DX 推進に貢献してまいります。\n\nこのアプリは、インターンシップ期間中に生まれたアイデアから誕生したもので、現場のニーズを深く理解した実用的な機能を搭載しています。\n\nリアルタイムでの在庫確認、品質情報の詳細表示、簡単な発注システムなど、日々の業務を効率化する機能が満載です。",
         excerpt: "リサイクル自動車部品流通プラットフォーム「Uzone」正式リリース",
         category: "プロダクト",
         imageUrl: null,
+        contentImages: [
+          "https://images.unsplash.com/photo-1560472355-536de3962603?w=800&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=700&h=450&fit=crop",
+          "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=750&h=480&fit=crop"
+        ],
         published: true,
         publishedAt: new Date("2024-02-20"),
       },

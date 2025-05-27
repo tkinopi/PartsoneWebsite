@@ -105,9 +105,36 @@ export default function NewsDetail() {
           
           {/* 記事本文 */}
           <div className="prose prose-lg max-w-none mb-16">
-            <p className="text-lg leading-relaxed whitespace-pre-line">
-              {newsItem.content}
-            </p>
+            {(() => {
+              // 記事内容を段落ごとに分割
+              const paragraphs = newsItem.content.split('\n\n').filter(p => p.trim());
+              const contentImages = newsItem.contentImages || [];
+              const result: JSX.Element[] = [];
+              
+              paragraphs.forEach((paragraph, index) => {
+                // 段落を追加
+                result.push(
+                  <p key={`paragraph-${index}`} className="text-lg leading-relaxed mb-6">
+                    {paragraph}
+                  </p>
+                );
+                
+                // 画像がある場合、適切な位置に挿入
+                if (contentImages[index] && index < contentImages.length) {
+                  result.push(
+                    <div key={`image-${index}`} className="my-8">
+                      <img
+                        src={contentImages[index]}
+                        alt={`記事内画像 ${index + 1}`}
+                        className="w-full rounded-lg shadow-lg"
+                      />
+                    </div>
+                  );
+                }
+              });
+              
+              return result;
+            })()}
           </div>
           
           {/* 関連記事 */}
