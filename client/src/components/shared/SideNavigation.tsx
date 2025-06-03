@@ -20,10 +20,10 @@ const SideNavigation = ({ items, activeSection, baseUrl }: SideNavigationProps) 
           <Link
             key={`desktop-${item.id}`}
             href={`${baseUrl}/${item.id}`}
-            className={`block py-2 px-3 text-sm transition-colors ${
+            className={`block py-2 text-sm transition-colors border-l-2 ${
               activeSection === item.id
-                ? "text-primary font-medium border-l-2 border-primary pl-2"
-                : "text-gray-600 hover:text-primary"
+                ? "text-primary font-medium border-primary pl-3"
+                : "text-gray-600 hover:text-primary border-transparent pl-3"
             }`}
           >
             {item.label}
