@@ -9,6 +9,8 @@ import {
   type NewsArticle,
   type InsertNewsArticle
 } from "@shared/schema";
+import { db } from "./db";
+import { eq } from "drizzle-orm";
 
 // Modify the interface with CRUD methods
 export interface IStorage {
@@ -30,10 +32,10 @@ export interface IStorage {
   updateNewsArticle(id: number, article: Partial<InsertNewsArticle>): Promise<NewsArticle | undefined>;
   deleteNewsArticle(id: number): Promise<boolean>;
   
-  // Job application methods
-  createJobApplication(application: InsertJobApplication): Promise<JobApplication>;
-  getJobApplications(): Promise<JobApplication[]>;
-  getJobApplication(id: number): Promise<JobApplication | undefined>;
+  // Job application methods (placeholder for future implementation)
+  // createJobApplication(application: InsertJobApplication): Promise<JobApplication>;
+  // getJobApplications(): Promise<JobApplication[]>;
+  // getJobApplication(id: number): Promise<JobApplication | undefined>;
 }
 
 export class MemStorage implements IStorage {
@@ -225,4 +227,77 @@ export class MemStorage implements IStorage {
   }
 }
 
-export const storage = new MemStorage();
+// Database Storage implementation
+export class DatabaseStorage implements IStorage {
+  async getUser(id: number): Promise<User | undefined> {
+    const [user] = await db.select().from(users).where(eq(users.id, id));
+    return user || undefined;
+  }
+
+  async getUserByUsername(username: string): Promise<User | undefined> {
+    const [user] = await db.select().from(users).where(eq(users.username, username));
+    return user || undefined;
+  }
+
+  async createUser(insertUser: InsertUser): Promise<User> {
+    const [user] = await db
+      .insert(users)
+      .values(insertUser)
+      .returning();
+    return user;
+  }
+
+  async createContactSubmission(submission: InsertContactSubmission): Promise<ContactSubmission> {
+    const [result] = await db
+      .insert(contactSubmissions)
+      .values(submission)
+      .returning();
+    return result;
+  }
+
+  async getContactSubmissions(): Promise<ContactSubmission[]> {
+    return await db.select().from(contactSubmissions);
+  }
+
+  async getContactSubmission(id: number): Promise<ContactSubmission | undefined> {
+    const [submission] = await db.select().from(contactSubmissions).where(eq(contactSubmissions.id, id));
+    return submission || undefined;
+  }
+
+  async createNewsArticle(article: InsertNewsArticle): Promise<NewsArticle> {
+    const [result] = await db
+      .insert(newsArticles)
+      .values(article)
+      .returning();
+    return result;
+  }
+
+  async getNewsArticles(): Promise<NewsArticle[]> {
+    return await db.select().from(newsArticles);
+  }
+
+  async getPublishedNewsArticles(): Promise<NewsArticle[]> {
+    return await db.select().from(newsArticles).where(eq(newsArticles.published, true));
+  }
+
+  async getNewsArticle(id: number): Promise<NewsArticle | undefined> {
+    const [article] = await db.select().from(newsArticles).where(eq(newsArticles.id, id));
+    return article || undefined;
+  }
+
+  async updateNewsArticle(id: number, updateData: Partial<InsertNewsArticle>): Promise<NewsArticle | undefined> {
+    const [article] = await db
+      .update(newsArticles)
+      .set(updateData)
+      .where(eq(newsArticles.id, id))
+      .returning();
+    return article || undefined;
+  }
+
+  async deleteNewsArticle(id: number): Promise<boolean> {
+    const result = await db.delete(newsArticles).where(eq(newsArticles.id, id));
+    return (result.rowCount || 0) > 0;
+  }
+}
+
+export const storage = new DatabaseStorage();
