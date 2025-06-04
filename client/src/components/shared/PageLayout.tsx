@@ -12,7 +12,7 @@ const PageLayout = ({ children, navigation }: PageLayoutProps) => {
       <Container className="py-16 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-[180px,1fr] gap-12">
           {/* Left Navigation */}
-          <div className="md:-ml-4">
+          <div className="md:-ml-8">
             {navigation}
           </div>
           
