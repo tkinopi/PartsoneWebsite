@@ -20,7 +20,7 @@ const SideNavigation = ({ items, activeSection, baseUrl }: SideNavigationProps) 
           <Link
             key={`desktop-${item.id}`}
             href={`${baseUrl}/${item.id}`}
-            className={`block py-2 text-sm transition-colors border-l-2 ${
+            className={`block py-3 text-base transition-colors border-l-2 ${
               activeSection === item.id
                 ? "text-primary font-medium border-primary pl-3"
                 : "text-gray-600 hover:text-primary border-transparent pl-3"
@@ -38,7 +38,7 @@ const SideNavigation = ({ items, activeSection, baseUrl }: SideNavigationProps) 
             <Link
               key={`mobile-${item.id}`}
               href={`${baseUrl}/${item.id}`}
-              className={`py-1 px-3 text-xs rounded-full transition-colors ${
+              className={`py-2 px-4 text-sm rounded-full transition-colors ${
                 activeSection === item.id
                   ? "bg-primary/10 text-primary font-medium"
                   : "bg-gray-100 text-gray-700 hover:bg-gray-200"
