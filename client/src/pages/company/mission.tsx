@@ -1,14 +1,8 @@
 import { useEffect } from "react";
-import { Container } from "@/components/ui/container";
-import { Button } from "@/components/ui/button";
-import { ArrowLeft } from "lucide-react";
-import { useLocation } from "wouter";
-import Navigation from "@/components/company/Navigation";
+import CompanyPageLayout from "@/components/company/CompanyPageLayout";
 import MissionSection from "@/components/company/MissionSection";
 
 const MissionPage = () => {
-  const [_, setLocation] = useLocation();
-  
   // Set page title and meta data
   useEffect(() => {
     document.title = "ミッション | 会社情報 | Partsone";
@@ -25,21 +19,9 @@ const MissionPage = () => {
   }, []);
 
   return (
-    <div className="pt-20">
-      <Container className="py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Left Navigation */}
-          <div className="md:col-span-1">
-            <Navigation activeSection="mission" />
-          </div>
-          
-          {/* Main Content */}
-          <div className="md:col-span-3">
-            <MissionSection />
-          </div>
-        </div>
-      </Container>
-    </div>
+    <CompanyPageLayout activeSection="mission">
+      <MissionSection />
+    </CompanyPageLayout>
   );
 };
 
