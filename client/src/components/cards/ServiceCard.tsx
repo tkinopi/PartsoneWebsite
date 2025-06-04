@@ -28,7 +28,7 @@ const ServiceCard = ({ title, description, imageSrc, index, detailUrl }: Service
       className="bg-white rounded-lg overflow-hidden shadow-lg transition-all hover:shadow-xl hover:-translate-y-1"
       variants={item}
     >
-      <div className="h-48 overflow-hidden">
+      <div className="h-72 overflow-hidden">
         <img 
           src={imageSrc} 
           alt={title} 
@@ -36,9 +36,9 @@ const ServiceCard = ({ title, description, imageSrc, index, detailUrl }: Service
           loading="lazy"
         />
       </div>
-      <div className="p-6">
-        <h3 className="text-xl font-bold mb-3">{title}</h3>
-        <p className="text-muted-foreground mb-4">
+      <div className="p-8">
+        <h3 className="text-2xl font-bold mb-4">{title}</h3>
+        <p className="text-muted-foreground mb-6 text-lg leading-relaxed">
           {description}
         </p>
         <Link 
