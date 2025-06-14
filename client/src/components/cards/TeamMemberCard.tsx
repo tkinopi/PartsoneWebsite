@@ -30,7 +30,7 @@ const TeamMemberCard = ({ name, position, description, imageSrc, index }: TeamMe
         <img 
           src={imageSrc} 
           alt={`${name} - ${position}`} 
-          className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-105"
+          className="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105"
           loading="lazy"
         />
       </div>

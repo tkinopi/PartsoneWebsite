@@ -58,7 +58,7 @@ const TeamSection = () => {
                     <img 
                       src={member.imageSrc} 
                       alt={member.name} 
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover object-top"
                     />
                   </button>
                   <span className={`text-center text-sm font-medium transition-opacity duration-300 ${isActive ? 'opacity-100' : 'opacity-70'}`}>
@@ -94,7 +94,7 @@ const TeamSection = () => {
             <img 
               src={activeMember.imageSrc} 
               alt={activeMember.name} 
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-top"
             />
           </div>
           <div className="md:w-1/2 p-8">
