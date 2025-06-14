@@ -12,7 +12,7 @@ export default function InterviewPage() {
         name: "半崎 学",
         position: "バックエンドエンジニア",
         joined: "2020年~",
-        image: "/attached_assets/553cd538-fa30-451e-9524-6c191ba96cd1_1749880328134.jpeg",
+        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
         content: [
           "アクセンチュアで大手コンビニチェーンの案件など、何千万円規模のプロジェクトを複数経験してきました。そこで培った大手企業開発の厳格さと、ミスが許されない環境での経験が、今のPartsoneでの開発においても活かされています。",
           "私が最も重視しているのは、コードレビューの質です。単にコードが動くかどうかではなく、テストケースの網羅性から設計の妥当性まで、参考文献を交えながら原理原則に基づいた指導を心がけています。例えば、Clean Architectureの概念やSOLID原則について、Martin Fowlerの書籍やGoFのデザインパターンを引用しながら、なぜその設計が必要なのかを丁寧に説明します。",
