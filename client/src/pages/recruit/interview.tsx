@@ -3,7 +3,6 @@ import { SectionTitle } from "@/components/ui/section-title";
 import RecruitPageLayout from "@/components/recruit/RecruitPageLayout";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
-
 export default function InterviewPage() {
   const [activeTab, setActiveTab] = useState("engineering");
 
@@ -23,15 +22,14 @@ export default function InterviewPage() {
     ],
     business: [
       {
-        name: "鈴木 隆",
-        position: "ビジネスディベロップメントマネージャー",
-        joined: "2019年",
-        image:
-          "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        name: "吉村 遼馬",
+        position: "BisDev",
+        joined: "2019年~",
+        image: "/images/yoshimura.png",
         content: [
-          "ビジネス開発の分野で10年以上の経験を積んだ後、成長段階にあるテック企業で新たなチャレンジを求めていました。Partsoneは技術的な革新と堅実なビジネス戦略のバランスが取れており、理想的な環境でした。",
-          "日々の業務では、新規市場の調査から戦略的パートナーシップの構築まで、幅広い責任を担っています。自律性が高く、自分のアイデアを実行に移す機会が多いことが、この会社での仕事のやりがいです。",
-          "最も価値を感じるのは、技術チームとビジネスチームの間の壁が低いことです。エンジニアと密に連携することで、製品開発の早い段階から市場のニーズを反映させることができます。この連携が、私たちのソリューションが市場で成功している大きな理由だと思います。",
+          "2022年に外交官志望から一転してPartsoneに入社。情報システム運用からセールス、経理、新卒・インターン対応まで、“困りごと”を自発的に調べ解決する役割を一手に担っています。",
+          "仕組み化やコミュニケーション力の向上を課題としつつも、エンジニアとビジネスをつなぐ“通訳”として、市場ニーズを反映した提案ができる点に最大のやりがいを感じています。",
+          "自律性が高く、自分のアイデアを速やかに実行できる環境だからこそ、これからも、自分の成長をどんどん加速させていけると感じております。",
         ],
       },
       {
