@@ -25,8 +25,7 @@ export default function InterviewPage() {
         name: "吉村 遼馬",
         position: "BisDev",
         joined: "2019年~",
-        image:
-          "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        image: "/images/yoshimura.png",
         content: [
           "2022年に外交官志望から一転してPartsoneに入社。情報システム運用からセールス、経理、新卒・インターン対応まで、“困りごと”を自発的に調べ解決する役割を一手に担っています。",
           "仕組み化やコミュニケーション力の向上を課題としつつも、エンジニアとビジネスをつなぐ“通訳”として、市場ニーズを反映した提案ができる点に最大のやりがいを感じています。",
@@ -37,8 +36,7 @@ export default function InterviewPage() {
         name: "久保 実央",
         position: "BisDev",
         joined: "2024年~",
-        image:
-          "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        image: "/images/yubo.png",
         content: [
           "群馬県出身で自動車産業に親しみを感じつつ、新卒で大手コンサルファームに入社。しかしスピード感と手応えを求めて、2024年11月にPartsoneへ転職しました。",
           "現在はBizDevとして、現場で顧客課題を体感しながら要件定義からエンジニアへの開発依頼まで一貫して担当しています。。",
