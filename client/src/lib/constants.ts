@@ -4,7 +4,7 @@ import nagakuraImage from "@assets/スクリーンショット 2025-05-26 18.36.
 import yoshimuraImage from "@assets/スクリーンショット 2025-05-26 18.41.53.png";
 import yamadaImage from "@assets/スクリーンショット 2025-05-26 18.45.29.png";
 import hatakeyamaImage from "@assets/スクリーンショット 2025-05-26 18.50.56.png";
-import kuboImage from "@assets/IMG_8943 (1).jpg";
+import kuboImage from "/images/yubo.png";
 import fujisawaImage from "@assets/スクリーンショット 2025-05-26 19.01.43.png";
 
 // Services data

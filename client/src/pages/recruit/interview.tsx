@@ -35,7 +35,7 @@ export default function InterviewPage() {
       },
       {
         name: "久保 実央",
-        position: "BizDev",
+        position: "BisDev",
         joined: "2024年~",
         image:
           "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
