@@ -35,8 +35,9 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="max-w-3xl"
         >
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4 whitespace-nowrap">
-            リサイクルから、世界を動かす。
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
+            <span className="block sm:inline">リサイクルから、</span>
+            <span className="block sm:inline">世界を動かす。</span>
           </h1>
           <p className="text-xl text-white mb-8">
             私たちの技術とアイデアで、<br />
