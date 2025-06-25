@@ -42,9 +42,13 @@ import ApplyPage from "@/pages/recruit/apply";
 
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { useScrollToTop } from "@/hooks/use-scroll-to-top";
 import { useEffect } from "react";
 
 function Router() {
+  // Scroll to top on route change
+  useScrollToTop();
+  
   // Set page title
   useEffect(() => {
     document.title = "Partsone | 総合レンタル会社";
