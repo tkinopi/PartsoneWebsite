@@ -2,12 +2,18 @@ import { SectionTitle } from "@/components/ui/section-title";
 
 const HistorySection = () => {
   const historyItems = [
-    { year: "2007年", event: "パーツワン株式会社 設立", description: "東京都渋谷区に本社を設立し、レンタルサービス事業を開始" },
-    { year: "2010年", event: "東京支社 開設", description: "事業拡大に伴い、東京都中央区に東京支社を開設し、営業体制を強化" },
-    { year: "2015年", event: "大阪支社 開設", description: "関西地区のお客様のニーズに応えるため、大阪市に支社を開設" },
-    { year: "2018年", event: "ISO9001認証取得", description: "品質マネジメントシステムの国際規格ISO9001の認証を取得し、サービス品質の向上に努める" },
-    { year: "2020年", event: "福岡支社 開設", description: "九州地区での事業拡大のため、福岡市に支社を開設" },
-    { year: "2022年", event: "名古屋支社 開設", description: "中部地区のお客様へのサービス向上を目指し、名古屋市に支社を開設" },
+    { year: "2009年11月", event: "パーツワンスタート", description: "事業を開始し、自動車部品事業の基盤を築く" },
+    { year: "2014年", event: "産経新聞社・終日社・ワンウィルに参画", description: "業界のパートナーシップを拡大し、事業基盤を強化" },
+    { year: "2014年", event: "渋谷区道玄坂に事務所移転", description: "渋谷区南平台から道玄坂へ事務所を移転し、事業体制を整備" },
+    { year: "2016年", event: "新卒採用・長期インターンシップの本格運用", description: "人材育成に注力し、長期インターンシップ制度をスタート" },
+    { year: "2019年", event: "渋谷区代々木に事務所移転", description: "事業拡大に伴い代々木へ移転し、社内事業提案プレゼンを開始" },
+    { year: "2019年", event: "ホンダパーツドットショップ開始", description: "ホンダディーラー向けサービスを本格的にスタート" },
+    { year: "2020年", event: "自動車部品マッチングアプリ提案", description: "社内事業提案でUzoneの原型となるマッチングアプリを提案" },
+    { year: "2022年", event: "Uzone開発スタート", description: "自動車部品の自動マッチングシステムUzoneの開発を本格開始" },
+    { year: "2024年", event: "Uzoneリリース", description: "革新的な自動車部品マッチングプラットフォームUzoneを正式リリース" },
+    { year: "2024年", event: "現在地に事務所移転", description: "事業拡大に対応するため、現在の事務所に移転" },
+    { year: "2024年", event: "中途採用強化", description: "組織拡大のため、中途採用の取り組みを強化" },
+    { year: "2025年", event: "マネジメント人材採用強化", description: "中途採用でマネジメント層の人員を強化し、組織体制を充実" },
   ];
 
   return (
