@@ -15,6 +15,12 @@ import DigitalServiceDetail from "@/pages/DigitalServiceDetail";
 import SourcingServiceDetail from "@/pages/SourcingServiceDetail";
 import Contact from "@/pages/Contact";
 
+// お問い合わせページ
+import HondaContact from "@/pages/contact/HondaContact";
+import NissanContact from "@/pages/contact/NissanContact";
+import RecruitmentContact from "@/pages/contact/RecruitmentContact";
+import GeneralContact from "@/pages/contact/GeneralContact";
+
 // サポートページ
 import FAQPage from "@/pages/support/FAQ";
 import SupportCenterPage from "@/pages/support/SupportCenter";
@@ -122,6 +128,10 @@ function Router() {
           
           {/* お問い合わせページ */}
           <Route path="/contact" component={Contact} />
+          <Route path="/contact/honda" component={HondaContact} />
+          <Route path="/contact/nissan" component={NissanContact} />
+          <Route path="/contact/recruitment" component={RecruitmentContact} />
+          <Route path="/contact/general" component={GeneralContact} />
 
           {/* サポートページ */}
           <Route path="/support/faq" component={FAQPage} />
