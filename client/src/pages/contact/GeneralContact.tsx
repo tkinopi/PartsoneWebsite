@@ -24,11 +24,8 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { ArrowRight, CheckCircle, Loader2 } from "lucide-react";
-import ContactOptionCard from "@/components/contact/ContactOptionCard";
-import attachedImage from "@assets/スクリーンショット 2025-06-28 17.01.25_1751097691702.png";
 
-// バリデーションスキーマ
-const contactFormSchema = z.object({
+const generalContactSchema = z.object({
   name: z.string().min(1, "お名前を入力してください"),
   email: z
     .string()
@@ -40,20 +37,17 @@ const contactFormSchema = z.object({
   message: z.string().min(1, "お問い合わせ内容を入力してください"),
 });
 
-type ContactFormValues = z.infer<typeof contactFormSchema>;
+type GeneralContactFormValues = z.infer<typeof generalContactSchema>;
 
-const Contact = () => {
+const GeneralContact = () => {
   const { toast } = useToast();
 
-  // SEO設定
   useEffect(() => {
-    document.title = "お問い合わせ | Partsone";
+    document.title = "総合お問い合わせ | Partsone";
 
-    // Add meta description
     const metaDescription = document.createElement("meta");
     metaDescription.name = "description";
-    metaDescription.content =
-      "Partsoneへのお問い合わせはこちらから。サービスについてのご質問、お見積もり依頼、採用情報についてなど、お気軽にお問い合わせください。";
+    metaDescription.content = "Partsoneへの総合的なお問い合わせページです。サービス全般についてお気軽にお問い合わせください。";
     document.head.appendChild(metaDescription);
 
     return () => {
@@ -61,9 +55,8 @@ const Contact = () => {
     };
   }, []);
 
-  // フォームの初期化
-  const form = useForm<ContactFormValues>({
-    resolver: zodResolver(contactFormSchema),
+  const form = useForm<GeneralContactFormValues>({
+    resolver: zodResolver(generalContactSchema),
     defaultValues: {
       name: "",
       email: "",
@@ -74,8 +67,7 @@ const Contact = () => {
     },
   });
 
-  // フォーム送信処理
-  const onSubmit = async (data: ContactFormValues) => {
+  const onSubmit = async (data: GeneralContactFormValues) => {
     try {
       await fetch("/api/contact", {
         method: "POST",
@@ -87,8 +79,7 @@ const Contact = () => {
 
       toast({
         title: "送信完了",
-        description:
-          "お問い合わせを受け付けました。担当者より折り返しご連絡いたします。",
+        description: "お問い合わせを受け付けました。担当者より折り返しご連絡いたします。",
         duration: 5000,
       });
 
@@ -106,58 +97,18 @@ const Contact = () => {
   return (
     <div className="pt-24 pb-16">
       <Container>
-        {/* ヘッダーセクション */}
         <div className="max-w-4xl mx-auto mb-12">
           <SectionTitle
-            title="お問い合わせ"
-            subtitle="ビジネスに関するご質問、お見積もり依頼など、お気軽にお問い合わせください"
+            title="総合お問い合わせ"
+            subtitle="Uzoneやその他のサービスについて、お気軽にお問い合わせください"
             center
           />
         </div>
 
-        {/* お問い合わせ種別選択セクション */}
-        <div className="max-w-6xl mx-auto mb-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <ContactOptionCard
-              title="ホンダディーラーはこちら"
-              description="ホンダディーラー様向けの専用サービスに関するお問い合わせ"
-              imageSrc={attachedImage}
-              href="/contact/honda"
-              index={0}
-            />
-            <ContactOptionCard
-              title="日産ディーラーはこちら"
-              description="日産ディーラー様向けの専用サービスに関するお問い合わせ"
-              imageSrc={attachedImage}
-              href="/contact/nissan"
-              index={1}
-            />
-            <ContactOptionCard
-              title="採用のお問い合わせ"
-              description="採用情報、求人に関するお問い合わせ"
-              imageSrc={attachedImage}
-              href="/contact/recruitment"
-              index={2}
-            />
-            <ContactOptionCard
-              title="総合お問い合わせ"
-              description="その他のサービスや一般的なお問い合わせ"
-              imageSrc={attachedImage}
-              href="/contact/general"
-              index={3}
-            />
-          </div>
-        </div>
-
         <div className="max-w-3xl mx-auto">
-          {/* フォームセクション */}
           <div className="bg-white p-8 rounded-xl shadow-md">
             <Form {...form}>
-              <form
-                onSubmit={form.handleSubmit(onSubmit)}
-                className="space-y-6"
-              >
-                {/* 名前 */}
+              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                 <FormField
                   control={form.control}
                   name="name"
@@ -174,7 +125,6 @@ const Contact = () => {
                   )}
                 />
 
-                {/* メールアドレス */}
                 <FormField
                   control={form.control}
                   name="email"
@@ -191,7 +141,6 @@ const Contact = () => {
                   )}
                 />
 
-                {/* 会社名 */}
                 <FormField
                   control={form.control}
                   name="company"
@@ -206,7 +155,6 @@ const Contact = () => {
                   )}
                 />
 
-                {/* 電話番号 */}
                 <FormField
                   control={form.control}
                   name="phone"
@@ -221,7 +169,6 @@ const Contact = () => {
                   )}
                 />
 
-                {/* お問い合わせ件名 */}
                 <FormField
                   control={form.control}
                   name="subject"
@@ -230,25 +177,17 @@ const Contact = () => {
                       <FormLabel>
                         お問い合わせ件名 <span className="text-red-500">*</span>
                       </FormLabel>
-                      <Select
-                        onValueChange={field.onChange}
-                        defaultValue={field.value}
-                      >
+                      <Select onValueChange={field.onChange} defaultValue={field.value}>
                         <FormControl>
                           <SelectTrigger>
                             <SelectValue placeholder="お問い合わせ件名を選択してください" />
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
-                          <SelectItem value="サービスについて">
-                            サービスについて
-                          </SelectItem>
-                          <SelectItem value="お見積もり依頼">
-                            お見積もり依頼
-                          </SelectItem>
-                          <SelectItem value="採用について">
-                            採用について
-                          </SelectItem>
+                          <SelectItem value="Uzoneについて">Uzoneについて</SelectItem>
+                          <SelectItem value="サービスについて">サービスについて</SelectItem>
+                          <SelectItem value="お見積もり依頼">お見積もり依頼</SelectItem>
+                          <SelectItem value="事業提携について">事業提携について</SelectItem>
                           <SelectItem value="その他">その他</SelectItem>
                         </SelectContent>
                       </Select>
@@ -257,7 +196,6 @@ const Contact = () => {
                   )}
                 />
 
-                {/* お問い合わせ内容 */}
                 <FormField
                   control={form.control}
                   name="message"
@@ -278,7 +216,6 @@ const Contact = () => {
                   )}
                 />
 
-                {/* 送信ボタン */}
                 <div className="pt-4">
                   <Button
                     type="submit"
@@ -331,4 +268,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default GeneralContact;
