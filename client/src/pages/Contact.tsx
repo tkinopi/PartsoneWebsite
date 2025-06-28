@@ -120,28 +120,24 @@ const Contact = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <ContactOptionCard
               title="ホンダディーラーはこちら"
-              description="ホンダディーラー様向けの専用サービスに関するお問い合わせ"
               imageSrc={attachedImage}
               href="/contact/honda"
               index={0}
             />
             <ContactOptionCard
               title="日産ディーラーはこちら"
-              description="日産ディーラー様向けの専用サービスに関するお問い合わせ"
               imageSrc={attachedImage}
               href="/contact/nissan"
               index={1}
             />
             <ContactOptionCard
               title="採用のお問い合わせ"
-              description="採用情報、求人に関するお問い合わせ"
               imageSrc={attachedImage}
               href="/contact/recruitment"
               index={2}
             />
             <ContactOptionCard
               title="総合お問い合わせ"
-              description="その他のサービスや一般的なお問い合わせ"
               imageSrc={attachedImage}
               href="/contact/general"
               index={3}
