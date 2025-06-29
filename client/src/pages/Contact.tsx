@@ -26,9 +26,9 @@ import {
 import { ArrowRight, CheckCircle, Loader2 } from "lucide-react";
 import ContactOptionCard from "@/components/contact/ContactOptionCard";
 import hondaImage from "@assets/honda_image_1.jpg";
-import nissanImage from "@assets/nissan_image_1.jpg";
-import generalImage from "@assets/for_general_1.jpg";
-import recruitImage from "@assets/for_recruit_1.jpg";
+import nissanImage from "@assets/nissan_image_1.png";
+import generalImage from "@assets/for_general_1.png";
+import recruitImage from "@assets/for_recruit_1.png";
 
 // バリデーションスキーマ
 const contactFormSchema = z.object({
