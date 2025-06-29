@@ -36,8 +36,7 @@ const Hero = () => {
           className="max-w-3xl"
         >
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
-            リサイクルから、
-            <span className="block md:inline"></span>
+            リサイクルから、<br className="block md:hidden" />
             世界を動かす。
           </h1>
           <p className="text-xl text-white mb-8">
