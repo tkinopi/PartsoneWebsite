@@ -17,6 +17,11 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { ArrowRight, Loader2 } from "lucide-react";
+import HondaActionCard from "@/components/contact/HondaActionCard";
+import hondaImage from "@assets/honda_image_1.jpg";
+import phoneImage from "@assets/IMG_1059.jpg";
+import pdfImage from "@assets/IMG_1065.jpg";
+import mediaImage from "@assets/IMG_4862.jpg";
 
 const hondaContactSchema = z.object({
   name: z.string().min(1, "お名前を入力してください"),
@@ -97,6 +102,41 @@ const HondaContact = () => {
             subtitle="ホンダパーツドットショップやディーラー様専用サービスについてお気軽にお問い合わせください"
             center
           />
+        </div>
+
+        {/* アクションカードセクション */}
+        <div className="max-w-6xl mx-auto mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <HondaActionCard
+              title="お電話でのお問い合わせ"
+              imageSrc={phoneImage}
+              index={0}
+              type="phone"
+              phoneNumber="03-3463-2065"
+              phoneHours="受付 9:00～18:00(平日・土曜)日曜・祝日休み"
+            />
+            <HondaActionCard
+              title="お問い合わせ用紙はこちら"
+              imageSrc={pdfImage}
+              index={1}
+              type="pdf"
+              pdfUrl="/documents/honda-inquiry-form.pdf"
+            />
+            <HondaActionCard
+              title="HondaParts.Shopはこちら"
+              imageSrc={hondaImage}
+              index={2}
+              type="external"
+              href="https://www.hondaparts.shop/"
+            />
+            <HondaActionCard
+              title="HondaParts.メディアはこちら"
+              imageSrc={mediaImage}
+              index={3}
+              type="external"
+              href="https://hondaparts-media.webflow.io/"
+            />
+          </div>
         </div>
 
         <div className="max-w-3xl mx-auto">
