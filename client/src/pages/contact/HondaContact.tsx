@@ -17,13 +17,12 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { ArrowRight, Loader2 } from "lucide-react";
+import { Link } from "wouter";
 import HondaActionCard from "@/components/contact/HondaActionCard";
 import hondaImage from "@assets/honda_image_1.jpg";
 import phoneImage from "@assets/for_general_1.png";
 import pdfImage from "@assets/IMG_1065.jpg";
 import mediaImage from "@assets/IMG_4862.jpg";
-import { useNavigate } from "react-router-dom";
-
 const specOptions = [
   "AT",
   "CVT",
@@ -56,8 +55,8 @@ const hondaContactSchema = z.object({
   specs: z.array(z.string()).min(1, "仕様を1つ以上選択してください"),
   partName: z.string().min(1, "部品名を入力してください"),
   partDetail: z.string().min(1, "部品名の詳細を入力してください"),
-  agree: z.literal(true, {
-    errorMap: () => ({ message: "個人情報保護方針に同意してください" }),
+  agree: z.boolean().refine((val) => val === true, {
+    message: "個人情報保護方針に同意してください",
   }),
 });
 
@@ -65,7 +64,6 @@ type HondaContactFormValues = z.infer<typeof hondaContactSchema>;
 
 const HondaContact = () => {
   const { toast } = useToast();
-  const navigate = useNavigate();
   const [submitting, setSubmitting] = useState(false);
 
   useEffect(() => {
@@ -102,7 +100,7 @@ const HondaContact = () => {
       specs: [],
       partName: "",
       partDetail: "",
-      agree: false,
+      agree: false as boolean,
     },
   });
 
@@ -508,14 +506,12 @@ const HondaContact = () => {
                           htmlFor="agree"
                           className="select-none"
                         >
-                          <span
+                          <Link
+                            href="/support/privacy-policy"
                             className="text-red-500 underline cursor-pointer"
-                            onClick={() =>
-                              navigate("/support/privacy-policy")
-                            }
                           >
                             個人情報保護方針
-                          </span>
+                          </Link>
                           の内容に同意する
                         </label>
                       </div>
