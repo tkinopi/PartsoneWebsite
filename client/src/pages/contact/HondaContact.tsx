@@ -120,7 +120,7 @@ const HondaContact = () => {
               imageSrc={pdfImage}
               index={1}
               type="pdf"
-              pdfUrl="/documents/honda-inquiry-form.pdf"
+              pdfUrl="/attached_assets/contact_1751203397110.pdf"
             />
             <HondaActionCard
               title="HondaParts.Shopはこちら"
