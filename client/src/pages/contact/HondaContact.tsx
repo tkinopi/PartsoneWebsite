@@ -19,7 +19,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { ArrowRight, Loader2 } from "lucide-react";
 import HondaActionCard from "@/components/contact/HondaActionCard";
 import hondaImage from "@assets/honda_image_1.jpg";
-import phoneImage from "@assets/IMG_1059.jpg";
+import phoneImage from "@assets/for_general_1.png";
 import pdfImage from "@assets/IMG_1065.jpg";
 import mediaImage from "@assets/IMG_4862.jpg";
 
