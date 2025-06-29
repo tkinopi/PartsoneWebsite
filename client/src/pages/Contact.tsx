@@ -25,7 +25,10 @@ import {
 } from "@/components/ui/select";
 import { ArrowRight, CheckCircle, Loader2 } from "lucide-react";
 import ContactOptionCard from "@/components/contact/ContactOptionCard";
-import attachedImage from "@assets/スクリーンショット 2025-06-28 17.01.25_1751097691702.png";
+import hondaImage from "@assets/honda_image_1.jpg";
+import nissanImage from "@assets/nissan_image_1.jpg";
+import generalImage from "@assets/for_general_1.jpg";
+import recruitImage from "@assets/for_recruit_1.jpg";
 
 // バリデーションスキーマ
 const contactFormSchema = z.object({
@@ -120,25 +123,25 @@ const Contact = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <ContactOptionCard
               title="ホンダディーラーはこちら"
-              imageSrc={attachedImage}
+              imageSrc={hondaImage}
               href="/contact/honda"
               index={0}
             />
             <ContactOptionCard
               title="日産ディーラーはこちら"
-              imageSrc={attachedImage}
+              imageSrc={nissanImage}
               href="/contact/nissan"
               index={1}
             />
             <ContactOptionCard
               title="採用のお問い合わせ"
-              imageSrc={attachedImage}
+              imageSrc={recruitImage}
               href="/contact/recruitment"
               index={2}
             />
             <ContactOptionCard
               title="総合お問い合わせ"
-              imageSrc={attachedImage}
+              imageSrc={generalImage}
               href="/contact/general"
               index={3}
             />
